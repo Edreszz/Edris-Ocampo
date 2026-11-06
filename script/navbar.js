@@ -3,7 +3,9 @@ document.addEventListener("DOMContentLoaded", function () {
   const navbar = document.querySelector(".navbar");
   const menuToggle = document.querySelector(".navbar__menu-toggle");
   const dropdowns = document.querySelectorAll(".navbar__dropdown");
-  const links = document.querySelectorAll(".navbar__link");
+  const links = document.querySelectorAll(
+    ".navbar__link[data-page], .navbar__dropdown-item[data-page]"
+  );
 
   const currentPath = window.location.pathname.replace(/\/+$/, "");
   const currentPage = currentPath.endsWith("/services.html")
@@ -14,7 +16,17 @@ document.addEventListener("DOMContentLoaded", function () {
         ? "about"
         : currentPath.endsWith("/contact.html")
           ? "contact"
-          : "home";
+        : currentPath.endsWith("/blogs.html")
+          ? "blogs"
+          : currentPath.endsWith("/ecommerce.html")
+            ? "ecommerce"
+            : currentPath.endsWith("/websites.html")
+              ? "websites"
+              : currentPath.endsWith("/other-projects.html")
+                ? "other-projects"
+        : currentPath.endsWith("/404.html")
+          ? "404"
+        : "home";
 
   links.forEach(function (link) {
     if (link.dataset.page === currentPage) {

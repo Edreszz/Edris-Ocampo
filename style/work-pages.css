@@ -1,0 +1,575 @@
+.portfolio-collection.page-content {
+  width: min(86%, 1120px);
+  min-height: calc(100svh - 92px);
+  padding-top: clamp(72px, 10vh, 118px);
+  padding-bottom: 90px;
+}
+
+.portfolio-collection .content-container {
+  width: 100%;
+  min-height: 0;
+}
+
+.collection-heading {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  margin-bottom: clamp(25px, 4vw, 42px);
+  animation: collection-enter 620ms cubic-bezier(0.2, 0.75, 0.25, 1) both;
+}
+
+.collection-heading__eyebrow {
+  margin: 0 0 9px;
+  color: var(--highlight);
+  font-size: 0.7rem;
+  font-weight: 700;
+  letter-spacing: 0.16em;
+}
+
+.collection-heading h1 {
+  margin: 0;
+  color: var(--text-primary);
+  font-size: clamp(2.5rem, 6vw, 4.5rem);
+  font-weight: 700;
+  letter-spacing: -0.07em;
+  line-height: 1;
+}
+
+.collection-stage {
+  animation: collection-enter 720ms 90ms cubic-bezier(0.2, 0.75, 0.25, 1) both;
+}
+
+.collection-panel {
+  position: relative;
+  min-width: 0;
+  overflow: hidden;
+  background-color: color-mix(in srgb, var(--surface-elevated) 78%, transparent);
+  border: 1px solid color-mix(in srgb, var(--border-color) 85%, transparent);
+  border-radius: 22px;
+  box-shadow: 0 16px 42px color-mix(in srgb, var(--shadow-color) 12%, transparent);
+  transition:
+    border-color 220ms ease,
+    box-shadow 220ms ease,
+    transform 220ms ease,
+    background-color 220ms ease;
+}
+
+.collection-panel::before,
+.collection-panel::after {
+  position: absolute;
+  pointer-events: none;
+  content: "";
+}
+
+.collection-panel:hover {
+  z-index: 1;
+  border-color: color-mix(in srgb, var(--accent-primary) 55%, var(--border-color));
+  box-shadow: 0 20px 46px color-mix(in srgb, var(--shadow-color) 18%, transparent);
+  transform: translateY(-4px);
+}
+
+.collection-stage--blogs {
+  display: grid;
+  grid-template-columns: minmax(0, 1.35fr) minmax(230px, 0.85fr);
+  grid-template-rows: repeat(2, minmax(175px, 1fr)) minmax(130px, 0.72fr);
+  gap: 16px;
+}
+
+.collection-panel--blog-feature {
+  grid-row: span 2;
+  min-height: 390px;
+  background:
+    radial-gradient(ellipse at 30% 25%, color-mix(in srgb, var(--accent-primary) 18%, transparent), transparent 49%),
+    linear-gradient(145deg, color-mix(in srgb, var(--surface-container) 94%, transparent), var(--background-secondary));
+}
+
+.collection-panel--blog-feature::before {
+  inset: 12% 9%;
+  border: 1px solid color-mix(in srgb, var(--accent-primary) 13%, transparent);
+  border-radius: 50%;
+  transform: rotate(-18deg) scale(1.2, 0.72);
+}
+
+.collection-panel--blog-feature::after {
+  right: 12%;
+  bottom: 14%;
+  width: 33%;
+  height: 24%;
+  background: linear-gradient(135deg, color-mix(in srgb, var(--accent-secondary) 25%, transparent), transparent 72%);
+  border-radius: 48% 52% 38% 62%;
+  filter: blur(1px);
+}
+
+.collection-panel--blog-side-top {
+  background:
+    linear-gradient(115deg, transparent 48%, color-mix(in srgb, var(--highlight) 8%, transparent) 48.2%, transparent 48.8%),
+    color-mix(in srgb, var(--surface-container) 76%, transparent);
+}
+
+.collection-panel--blog-side-top::before {
+  top: 21%;
+  right: 14%;
+  width: 34%;
+  aspect-ratio: 1;
+  border: 1px solid color-mix(in srgb, var(--highlight) 25%, transparent);
+  border-radius: 50%;
+}
+
+.collection-panel--blog-side-bottom {
+  background:
+    radial-gradient(ellipse at 80% 75%, color-mix(in srgb, var(--accent-secondary) 17%, transparent), transparent 46%),
+    color-mix(in srgb, var(--surface-container) 66%, transparent);
+}
+
+.collection-panel--blog-side-bottom::before {
+  top: 22%;
+  left: 12%;
+  width: 42%;
+  height: 1px;
+  background: color-mix(in srgb, var(--text-muted) 24%, transparent);
+  box-shadow: 0 12px 0 color-mix(in srgb, var(--text-muted) 15%, transparent);
+}
+
+.collection-panel--blog-wide {
+  grid-column: 1 / -1;
+  min-height: 150px;
+  background:
+    linear-gradient(100deg, color-mix(in srgb, var(--accent-primary) 9%, transparent), transparent 52%),
+    color-mix(in srgb, var(--surface-elevated) 72%, transparent);
+}
+
+.collection-panel--blog-wide::before {
+  inset: 25% 7%;
+  border-top: 1px solid color-mix(in srgb, var(--border-color) 65%, transparent);
+  border-bottom: 1px solid color-mix(in srgb, var(--border-color) 38%, transparent);
+  transform: skewY(-2deg);
+}
+
+.collection-heading--commerce {
+  justify-content: flex-end;
+  text-align: right;
+}
+
+.collection-stage--commerce {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 17px;
+}
+
+.collection-panel--commerce-feature {
+  grid-column: 1 / -1;
+  min-height: clamp(220px, 31vw, 350px);
+  background:
+    radial-gradient(ellipse at 75% 42%, color-mix(in srgb, var(--accent-primary) 22%, transparent), transparent 33%),
+    radial-gradient(ellipse at 28% 80%, color-mix(in srgb, var(--highlight) 12%, transparent), transparent 34%),
+    linear-gradient(120deg, var(--surface-container), var(--background-secondary));
+  border-radius: 28px;
+}
+
+.collection-panel--commerce-feature::before {
+  top: -25%;
+  right: 12%;
+  width: min(28vw, 300px);
+  aspect-ratio: 1;
+  border: 1px solid color-mix(in srgb, var(--accent-primary) 22%, transparent);
+  border-radius: 42% 58% 60% 40%;
+  transform: rotate(26deg);
+}
+
+.collection-panel--commerce-feature::after {
+  right: 20%;
+  bottom: 15%;
+  width: min(17vw, 190px);
+  aspect-ratio: 1;
+  background: color-mix(in srgb, var(--accent-secondary) 10%, transparent);
+  border: 1px solid color-mix(in srgb, var(--accent-secondary) 22%, transparent);
+  border-radius: 50%;
+}
+
+.collection-commerce-grid {
+  display: contents;
+}
+
+.collection-panel--product {
+  min-height: clamp(185px, 22vw, 250px);
+  background:
+    linear-gradient(155deg, color-mix(in srgb, var(--surface-container) 83%, transparent), transparent 76%),
+    var(--surface-elevated);
+  border-radius: 19px;
+}
+
+.collection-panel--product:nth-child(2) {
+  background:
+    radial-gradient(ellipse at 50% 35%, color-mix(in srgb, var(--accent-secondary) 15%, transparent), transparent 55%),
+    var(--surface-elevated);
+}
+
+.collection-panel--product:nth-child(3) {
+  background:
+    radial-gradient(ellipse at 65% 60%, color-mix(in srgb, var(--highlight) 13%, transparent), transparent 52%),
+    var(--surface-elevated);
+}
+
+.collection-heading--websites {
+  padding-left: clamp(0px, 8vw, 112px);
+}
+
+.collection-stage--websites {
+  display: grid;
+  grid-template-columns: minmax(0, 1.7fr) minmax(220px, 0.72fr);
+  align-items: stretch;
+  gap: 20px;
+  padding-left: clamp(0px, 8vw, 112px);
+}
+
+.collection-browser-row {
+  display: grid;
+  grid-template-rows: repeat(2, minmax(130px, 1fr));
+  gap: 16px;
+}
+
+.collection-browser {
+  min-width: 0;
+  overflow: hidden;
+  background: color-mix(in srgb, var(--surface-container) 76%, transparent);
+  border: 1px solid var(--border-color);
+  border-radius: 17px;
+  box-shadow: 0 18px 42px color-mix(in srgb, var(--shadow-color) 17%, transparent);
+  transition: border-color 220ms ease, transform 220ms ease, box-shadow 220ms ease;
+}
+
+.collection-browser:hover {
+  border-color: color-mix(in srgb, var(--accent-primary) 55%, var(--border-color));
+  box-shadow: 0 22px 48px color-mix(in srgb, var(--shadow-color) 23%, transparent);
+  transform: translateY(-4px);
+}
+
+.collection-browser--featured {
+  min-height: 490px;
+}
+
+.collection-browser__bar {
+  display: flex;
+  height: 37px;
+  align-items: center;
+  gap: 6px;
+  padding: 0 12px;
+  background: color-mix(in srgb, var(--background-secondary) 88%, transparent);
+  border-bottom: 1px solid var(--border-color);
+}
+
+.collection-browser__bar > span {
+  width: 6px;
+  height: 6px;
+  background: var(--text-muted);
+  border-radius: 50%;
+  opacity: 0.58;
+}
+
+.collection-browser__bar > span:first-child {
+  background: var(--accent-primary);
+}
+
+.collection-browser__bar > i {
+  width: 35%;
+  height: 8px;
+  margin: 0 auto;
+  background: color-mix(in srgb, var(--border-color) 58%, transparent);
+  border-radius: 99px;
+}
+
+.collection-browser__screen {
+  position: relative;
+  height: calc(100% - 37px);
+  min-height: 130px;
+  overflow: hidden;
+  background:
+    linear-gradient(145deg, transparent 50%, color-mix(in srgb, var(--accent-primary) 9%, transparent) 50.2%, transparent 50.6%),
+    radial-gradient(ellipse at 70% 30%, color-mix(in srgb, var(--accent-secondary) 15%, transparent), transparent 42%),
+    var(--background-primary);
+}
+
+.collection-browser__screen::before {
+  position: absolute;
+  inset: 13% 11%;
+  content: "";
+  border: 1px solid color-mix(in srgb, var(--border-color) 46%, transparent);
+  border-radius: 10px;
+}
+
+.collection-browser--small .collection-browser__bar {
+  height: 31px;
+  padding: 0 9px;
+}
+
+.collection-browser--small .collection-browser__bar > span {
+  width: 5px;
+  height: 5px;
+}
+
+.collection-browser--small .collection-browser__screen {
+  height: calc(100% - 31px);
+}
+
+.collection-heading--other {
+  justify-content: flex-end;
+  text-align: right;
+}
+
+.collection-stage--other {
+  display: grid;
+  grid-template-columns: repeat(12, minmax(0, 1fr));
+  grid-template-rows: repeat(2, minmax(175px, 1fr)) minmax(135px, 0.72fr);
+  gap: 16px;
+}
+
+.collection-panel--other-tall {
+  grid-column: span 5;
+  grid-row: span 2;
+  min-height: 365px;
+  background:
+    radial-gradient(ellipse at 25% 25%, color-mix(in srgb, var(--highlight) 14%, transparent), transparent 42%),
+    var(--surface-container);
+}
+
+.collection-panel--other-wide {
+  grid-column: span 7;
+  background:
+    linear-gradient(100deg, color-mix(in srgb, var(--accent-primary) 17%, transparent), transparent 72%),
+    var(--surface-elevated);
+}
+
+.collection-panel--other-small {
+  grid-column: span 3;
+  background:
+    radial-gradient(ellipse at 80% 20%, color-mix(in srgb, var(--accent-secondary) 16%, transparent), transparent 45%),
+    var(--surface-container);
+}
+
+.collection-panel--other-small:nth-of-type(4) {
+  background:
+    radial-gradient(ellipse at 20% 75%, color-mix(in srgb, var(--highlight) 13%, transparent), transparent 48%),
+    var(--surface-elevated);
+}
+
+.collection-panel--other-wide-bottom {
+  grid-column: span 7;
+  background:
+    linear-gradient(115deg, transparent 45%, color-mix(in srgb, var(--accent-primary) 12%, transparent) 45.3%, transparent 45.7%),
+    var(--surface-elevated);
+}
+
+.tech-experience.is-arriving .tech-section-heading,
+.tech-experience.is-arriving .tech-experience-card {
+  animation: experience-arrive 650ms cubic-bezier(0.2, 0.75, 0.25, 1) both;
+}
+
+.tech-experience.is-arriving .tech-experience-card:nth-child(2) {
+  animation-delay: 90ms;
+}
+
+.tech-experience.is-arriving .tech-experience-card:nth-child(3) {
+  animation-delay: 180ms;
+}
+
+@keyframes collection-enter {
+  from {
+    opacity: 0;
+    transform: translateY(18px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes experience-arrive {
+  from {
+    opacity: 0;
+    transform: translateY(22px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@media (max-width: 760px) {
+  .portfolio-collection.page-content {
+    width: min(90%, 600px);
+    min-height: calc(100svh - 72px);
+    padding-top: 62px;
+    padding-bottom: 58px;
+  }
+
+  .collection-heading {
+    margin-bottom: 23px;
+  }
+
+  .collection-heading h1 {
+    font-size: clamp(2.5rem, 12vw, 4rem);
+  }
+
+  .collection-stage--blogs {
+    grid-template-columns: minmax(0, 1fr) minmax(0, 0.8fr);
+    grid-template-rows: minmax(210px, 1.1fr) minmax(135px, 0.75fr) minmax(110px, 0.55fr);
+    gap: 10px;
+  }
+
+  .collection-panel {
+    border-radius: 17px;
+  }
+
+  .collection-panel--blog-feature {
+    min-height: 0;
+  }
+
+  .collection-panel--blog-wide {
+    min-height: 110px;
+  }
+
+  .collection-stage--commerce {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 11px;
+  }
+
+  .collection-panel--commerce-feature {
+    min-height: 220px;
+    border-radius: 21px;
+  }
+
+  .collection-panel--commerce-feature::before {
+    width: 45vw;
+  }
+
+  .collection-panel--product {
+    min-height: 170px;
+    border-radius: 15px;
+  }
+
+  .collection-panel--product:last-child {
+    grid-column: 1 / -1;
+    min-height: 130px;
+  }
+
+  .collection-heading--websites {
+    padding-left: 0;
+  }
+
+  .collection-stage--websites {
+    grid-template-columns: minmax(0, 1fr);
+    gap: 11px;
+    padding-left: 0;
+  }
+
+  .collection-browser--featured {
+    min-height: 330px;
+  }
+
+  .collection-browser-row {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    grid-template-rows: minmax(145px, 1fr);
+    gap: 11px;
+  }
+
+  .collection-browser {
+    border-radius: 14px;
+  }
+
+  .collection-browser__bar {
+    height: 30px;
+  }
+
+  .collection-browser__screen {
+    height: calc(100% - 30px);
+  }
+
+  .collection-stage--other {
+    grid-template-rows: repeat(3, minmax(125px, 1fr));
+    gap: 10px;
+  }
+
+  .collection-panel--other-tall {
+    grid-column: span 7;
+    grid-row: span 2;
+    min-height: 260px;
+  }
+
+  .collection-panel--other-wide {
+    grid-column: span 5;
+  }
+
+  .collection-panel--other-small {
+    grid-column: span 5;
+  }
+
+  .collection-panel--other-wide-bottom {
+    grid-column: span 12;
+    min-height: 115px;
+  }
+}
+
+@media (max-width: 420px) {
+  .collection-stage--blogs {
+    grid-template-columns: minmax(0, 1fr);
+    grid-template-rows: minmax(200px, 1.1fr) repeat(2, minmax(120px, 0.75fr)) minmax(100px, 0.55fr);
+  }
+
+  .collection-panel--blog-feature {
+    grid-row: auto;
+  }
+
+  .collection-panel--blog-wide {
+    grid-column: auto;
+  }
+
+  .collection-stage--commerce {
+    grid-template-columns: minmax(0, 1fr);
+  }
+
+  .collection-panel--commerce-feature,
+  .collection-panel--product:last-child {
+    grid-column: auto;
+  }
+
+  .collection-panel--product {
+    min-height: 145px;
+  }
+
+  .collection-panel--product:last-child {
+    min-height: 145px;
+  }
+
+  .collection-browser--featured {
+    min-height: 260px;
+  }
+
+  .collection-browser-row {
+    grid-template-columns: minmax(0, 1fr);
+    grid-template-rows: repeat(2, minmax(130px, 1fr));
+  }
+
+  .collection-stage--other {
+    grid-template-rows: minmax(210px, 1fr) repeat(2, minmax(120px, 0.6fr)) minmax(105px, 0.5fr);
+  }
+
+  .collection-panel--other-tall {
+    grid-column: span 12;
+    grid-row: auto;
+    min-height: 0;
+  }
+
+  .collection-panel--other-wide,
+  .collection-panel--other-small {
+    grid-column: span 6;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .collection-heading,
+  .collection-stage,
+  .tech-experience.is-arriving .tech-section-heading,
+  .tech-experience.is-arriving .tech-experience-card {
+    animation: none;
+  }
+}

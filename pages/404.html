@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#252734">
+  <meta name="description" content="The page you are looking for could not be found. Find your way back to Edris Ocampo's portfolio.">
+  <title>404 — Page Not Found | Edris Ocampo</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../style/themes.css">
+  <link rel="stylesheet" href="../style/main.css">
+  <link rel="stylesheet" href="../style/navbar.css">
+  <link rel="stylesheet" href="../style/responsive.css">
+  <script src="../script/theme.js"></script>
+</head>
+<body class="not-found-page">
+  <div class="scroll-progress" aria-hidden="true"><div class="scroll-progress__bar" id="scroll-progress"></div></div>
+  <header class="site-header">
+    <nav class="navbar" aria-label="Main navigation">
+      <div class="navbar__brand">
+        <a class="navbar__brand-name" href="../index.html">Edris Ocampo</a>
+        <span class="navbar__brand-divider" aria-hidden="true"></span>
+        <span class="navbar__brand-label">Personal Portfolio System</span>
+      </div>
+      <button class="navbar__menu-toggle" type="button" aria-label="Open navigation menu" aria-expanded="false" aria-controls="primary-navigation">
+        <i class="navbar__menu-icon" data-lucide="menu" aria-hidden="true"></i>
+        <i class="navbar__close-icon" data-lucide="x" aria-hidden="true"></i>
+      </button>
+      <ul class="navbar__links" id="primary-navigation">
+        <li><a class="navbar__link" data-page="home" href="../index.html">Home</a></li>
+        <li><a class="navbar__link" data-page="services" href="services.html">Services</a></li>
+        <li><a class="navbar__link" data-page="technologies" href="technologies.html">Technologies</a></li>
+        <li class="navbar__dropdown">
+          <button class="navbar__link navbar__dropdown-toggle" type="button" data-page="about" aria-expanded="false" aria-controls="about-menu">
+            About <i data-lucide="chevron-down" aria-hidden="true"></i>
+          </button>
+          <div class="navbar__dropdown-menu" id="about-menu">
+            <p class="navbar__dropdown-heading">Profile</p>
+            <ul>
+              <li><a class="navbar__dropdown-item" href="about.html">About</a></li>
+              <li><a class="navbar__dropdown-item" href="technologies.html#experience">Experience</a></li>
+              <li><span class="navbar__dropdown-item">Certifications</span></li>
+            </ul>
+          </div>
+        </li>
+        <li><a class="navbar__link" data-page="contact" href="contact.html">Contact</a></li>
+        <li class="navbar__dropdown">
+          <button class="navbar__link navbar__dropdown-toggle" type="button" aria-expanded="false" aria-controls="pages-menu">
+            Pages <i data-lucide="chevron-down" aria-hidden="true"></i>
+          </button>
+          <div class="navbar__dropdown-menu" id="pages-menu">
+            <p class="navbar__dropdown-heading">Other</p>
+            <ul>
+              <li><a class="navbar__dropdown-item" data-page="blogs" href="blogs.html">Blogs</a></li>
+              <li><a class="navbar__dropdown-item" data-page="ecommerce" href="ecommerce.html">Ecommerce</a></li>
+              <li><a class="navbar__dropdown-item" data-page="websites" href="websites.html">Websites</a></li>
+              <li><a class="navbar__dropdown-item" data-page="other-projects" href="other-projects.html">Other Projects</a></li>
+            </ul>
+          </div>
+        </li>
+        <li class="navbar__cv-item">
+          <a class="navbar__cv" href="../Edris CV 2026 Update.pdf" download="Edris-Ocampo-CV-2026.pdf" aria-label="Download Edris Ocampo's CV as a PDF">
+            <i data-lucide="download" aria-hidden="true"></i>
+            <span>Download CV</span>
+          </a>
+        </li>
+      </ul>
+      <div class="navbar__controls">
+        <span class="navbar__clock" aria-label="Local time"><i data-lucide="clock-3" aria-hidden="true"></i><time id="local-clock">--:--:--</time></span>
+        <button class="icon-button theme-toggle" type="button" aria-label="Switch to light theme" aria-pressed="false">
+          <i class="theme-toggle__moon" data-lucide="moon" aria-hidden="true"></i>
+          <i class="theme-toggle__sun" data-lucide="sun" aria-hidden="true"></i>
+        </button>
+      </div>
+    </nav>
+  </header>
+
+  <main class="page-content not-found" id="main-content">
+    <div class="content-container">
+      <section class="not-found__content" aria-labelledby="not-found-title">
+        <p class="not-found__eyebrow"><span aria-hidden="true"></span> Lost in the wrong dimension</p>
+        <div class="not-found__art" aria-hidden="true">
+          <span class="not-found__digit">4</span>
+          <svg class="not-found__robot" viewBox="0 0 280 300" role="presentation">
+            <defs>
+              <linearGradient id="robot-shell" x1="0" x2="1" y1="0" y2="1">
+                <stop offset="0" stop-color="#fff"/>
+                <stop offset="1" stop-color="#cfd2dc"/>
+              </linearGradient>
+              <linearGradient id="robot-panel" x1="0" x2="0.9" y1="0" y2="1">
+                <stop offset="0" stop-color="#f9f9fc"/>
+                <stop offset="1" stop-color="#d8dae2"/>
+              </linearGradient>
+              <filter id="robot-shadow" x="-40%" y="-30%" width="180%" height="180%">
+                <feGaussianBlur in="SourceAlpha" stdDeviation="9"/>
+                <feOffset dy="10"/>
+                <feComponentTransfer><feFuncA type="linear" slope=".28"/></feComponentTransfer>
+                <feMerge><feMergeNode/><feMergeNode in="SourceGraphic"/></feMerge>
+              </filter>
+            </defs>
+            <g class="not-found__robot-float" filter="url(#robot-shadow)">
+              <path d="M66 144 47 190q-5 13 7 19 12 5 18-8l20-42M214 144l19 46q5 13-7 19-12 5-18-8l-20-42" fill="url(#robot-shell)" stroke="#b9bdc9" stroke-width="2"/>
+              <path d="M99 235v30q0 14 14 14t14-14v-30M154 235v30q0 14 14 14t14-14v-30" fill="url(#robot-shell)" stroke="#b9bdc9" stroke-width="2"/>
+              <path d="M76 45q0-24 24-27l80-5q25-2 29 24l9 93q3 27-22 31l-94 8q-26 2-29-24Z" fill="url(#robot-panel)" stroke="#c1c4cf" stroke-width="2"/>
+              <path d="m99 66 22-4" stroke="#42485b" stroke-width="8" stroke-linecap="round"/>
+              <path d="m163 61 22 3" stroke="#42485b" stroke-width="8" stroke-linecap="round"/>
+              <ellipse cx="108" cy="82" rx="5" ry="7" fill="#282c3a"/>
+              <ellipse cx="176" cy="82" rx="5" ry="7" fill="#282c3a"/>
+              <path d="M110 119q32-24 64 0" fill="none" stroke="#41475a" stroke-width="8" stroke-linecap="round"/>
+              <path d="M143 58q-4 12-8 22" fill="none" stroke="#8b9cf5" stroke-width="5" stroke-linecap="round"/>
+              <path class="not-found__tear" d="M110 97q-6 10 0 14 6-4 0-14Z" fill="#70c1b3"/>
+              <path d="M92 153h90q10 0 12 10l10 65q3 18-17 20l-95 5q-20 1-19-18l8-70q1-12 11-12Z" fill="url(#robot-shell)" stroke="#b9bdc9" stroke-width="2"/>
+              <rect x="114" y="174" width="57" height="9" rx="4.5" fill="#aeb3c1" opacity=".8"/>
+              <circle cx="142" cy="208" r="13" fill="#8b9cf5" opacity=".22"/>
+              <circle cx="142" cy="208" r="5" fill="#8b9cf5"/>
+            </g>
+          </svg>
+          <span class="not-found__digit">4</span>
+        </div>
+        <h1 class="not-found__title" id="not-found-title">Oops! Page not found.</h1>
+        <p class="not-found__description">
+          Looks like this little robot took a wrong turn. The page may have moved, changed its name, or wandered off for a recharge.
+        </p>
+        <div class="not-found__actions">
+          <a class="not-found__button not-found__button--primary" href="../index.html">
+            Back to homepage <i data-lucide="arrow-up-right" aria-hidden="true"></i>
+          </a>
+          <a class="not-found__button not-found__button--secondary" href="services.html">
+            Explore services <i data-lucide="move-up-right" aria-hidden="true"></i>
+          </a>
+        </div>
+      </section>
+    </div>
+  </main>
+
+  <script src="https://unpkg.com/lucide@latest"></script>
+  <script src="../script/main.js"></script>
+  <script src="../script/navbar.js"></script>
+  <script src="../script/clock.js"></script>
+  <script src="../script/scroll.js"></script>
+</body>
+</html>

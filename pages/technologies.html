@@ -4,8 +4,8 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="theme-color" content="#252734">
-  <meta name="description" content="Technologies portfolio page.">
-  <title>Technologies | Personal Portfolio</title>
+  <meta name="description" content="Explore Edris Ocampo's web development, design, marketing, and technical support toolkit.">
+  <title>Technologies &amp; Skills | Edris Ocampo</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
@@ -37,8 +37,7 @@
             <p class="navbar__dropdown-heading">Profile</p>
             <ul>
               <li><a class="navbar__dropdown-item" href="about.html">About</a></li>
-              <li><span class="navbar__dropdown-item">Experience</span></li>
-              <li><span class="navbar__dropdown-item">Education</span></li>
+              <li><a class="navbar__dropdown-item" href="technologies.html#experience">Experience</a></li>
               <li><span class="navbar__dropdown-item">Certifications</span></li>
             </ul>
           </div>
@@ -51,13 +50,18 @@
           <div class="navbar__dropdown-menu" id="pages-menu">
             <p class="navbar__dropdown-heading">Other</p>
             <ul>
-              <li><span class="navbar__dropdown-item">404</span></li>
-              <li><span class="navbar__dropdown-item">Blogs</span></li>
-              <li><span class="navbar__dropdown-item">Ecommerce</span></li>
-              <li><span class="navbar__dropdown-item">Websites</span></li>
-              <li><span class="navbar__dropdown-item">Other Projects</span></li>
+              <li><a class="navbar__dropdown-item" data-page="blogs" href="blogs.html">Blogs</a></li>
+              <li><a class="navbar__dropdown-item" data-page="ecommerce" href="ecommerce.html">Ecommerce</a></li>
+              <li><a class="navbar__dropdown-item" data-page="websites" href="websites.html">Websites</a></li>
+              <li><a class="navbar__dropdown-item" data-page="other-projects" href="other-projects.html">Other Projects</a></li>
             </ul>
           </div>
+        </li>
+        <li class="navbar__cv-item">
+          <a class="navbar__cv" href="../Edris CV 2026 Update.pdf" download="Edris-Ocampo-CV-2026.pdf" aria-label="Download Edris Ocampo's CV as a PDF">
+            <i data-lucide="download" aria-hidden="true"></i>
+            <span>Download CV</span>
+          </a>
         </li>
       </ul>
       <div class="navbar__controls">
@@ -66,13 +70,201 @@
       </div>
     </nav>
   </header>
-  <main class="page-content" id="main-content"><div class="content-container" aria-label="Main content"></div></main>
+  <main class="page-content technologies-page" id="main-content">
+    <div class="content-container">
+      <section class="tech-hero" aria-labelledby="tech-hero-title">
+        <div class="tech-hero__copy">
+          <p class="tech-hero__eyebrow"><span aria-hidden="true"></span> My toolkit · Built through real work</p>
+          <h1 class="tech-hero__title" id="tech-hero-title">
+            Design thoughtfully.
+            <span>Build with purpose.</span>
+          </h1>
+          <p class="tech-hero__description">
+            From responsive web interfaces to marketing design and website care, I bring creative and technical skills together to help projects move forward.
+          </p>
+          <div class="tech-hero__actions">
+            <a class="tech-hero__button tech-hero__button--primary" href="#toolkit">
+              Explore my toolkit <i data-lucide="arrow-down" aria-hidden="true"></i>
+            </a>
+            <a class="tech-hero__button tech-hero__button--secondary" href="contact.html">
+              Let’s work together <i data-lucide="arrow-up-right" aria-hidden="true"></i>
+            </a>
+          </div>
+          <ul class="tech-hero__highlights" aria-label="Areas of experience">
+            <li><i data-lucide="panels-top-left" aria-hidden="true"></i> Web &amp; UI design</li>
+            <li><i data-lucide="send" aria-hidden="true"></i> Email marketing</li>
+            <li><i data-lucide="settings-2" aria-hidden="true"></i> Technical support</li>
+          </ul>
+        </div>
+
+        <div class="tech-hero__visual" aria-label="A snapshot of Edris's creative and technical toolkit">
+          <div class="tech-hero__orbit tech-hero__orbit--outer" aria-hidden="true"></div>
+          <div class="tech-hero__orbit tech-hero__orbit--inner" aria-hidden="true"></div>
+          <span class="tech-hero__orbit-dot tech-hero__orbit-dot--one" aria-hidden="true"></span>
+          <span class="tech-hero__orbit-dot tech-hero__orbit-dot--two" aria-hidden="true"></span>
+          <div class="tech-hero__stack-card">
+            <p class="tech-hero__stack-label"><span aria-hidden="true"></span> Creative + technical</p>
+            <div class="tech-hero__stack-logos" aria-hidden="true">
+              <span><img src="../assets/images/html5-logo.svg" alt="" width="42" height="48"></span>
+              <span><img src="../assets/icons/figma.png" alt="" width="48" height="48"></span>
+              <span><img src="../assets/icons/wordpress-.png" alt="" width="48" height="48"></span>
+            </div>
+            <div class="tech-hero__stack-rule" aria-hidden="true"></div>
+            <p class="tech-hero__stack-caption">From first sketch<br>to polished handoff.</p>
+            <span class="tech-hero__stack-sparkle" aria-hidden="true"><i data-lucide="sparkles"></i></span>
+          </div>
+        </div>
+      </section>
+
+      <section class="tech-pillars" aria-label="Core skill areas">
+        <article class="tech-pillar">
+          <span class="tech-pillar__icon"><i data-lucide="code-2" aria-hidden="true"></i></span>
+          <div><h2>Web foundations</h2><p>Responsive pages built with HTML, CSS, and vanilla JavaScript.</p></div>
+          <span class="tech-pillar__number">01</span>
+        </article>
+        <article class="tech-pillar">
+          <span class="tech-pillar__icon tech-pillar__icon--violet"><i data-lucide="pen-tool" aria-hidden="true"></i></span>
+          <div><h2>Design &amp; marketing</h2><p>UI concepts, design assets, email campaigns, and collateral.</p></div>
+          <span class="tech-pillar__number">02</span>
+        </article>
+        <article class="tech-pillar">
+          <span class="tech-pillar__icon tech-pillar__icon--mint"><i data-lucide="monitor-cog" aria-hidden="true"></i></span>
+          <div><h2>Platforms &amp; support</h2><p>Website management and dependable, hands-on troubleshooting.</p></div>
+          <span class="tech-pillar__number">03</span>
+        </article>
+      </section>
+
+      <section class="tech-toolkit" id="toolkit" aria-labelledby="toolkit-title">
+        <div class="tech-section-heading">
+          <div>
+            <p class="tech-section-heading__eyebrow">Tools I work with</p>
+            <h2 class="tech-section-heading__title" id="toolkit-title">A practical, flexible toolkit<span>.</span></h2>
+          </div>
+          <p class="tech-section-heading__description">The right tool for the task—whether that’s shaping an interface, managing a site, or creating a campaign.</p>
+        </div>
+
+        <div class="tech-filters" role="group" aria-label="Filter tools by category">
+          <button class="tech-filter is-active" type="button" data-technology-filter="all" aria-pressed="true">All tools <span>10</span></button>
+          <button class="tech-filter" type="button" data-technology-filter="web" aria-pressed="false">Web <span>3</span></button>
+          <button class="tech-filter" type="button" data-technology-filter="design" aria-pressed="false">Design <span>3</span></button>
+          <button class="tech-filter" type="button" data-technology-filter="platforms" aria-pressed="false">Platforms <span>2</span></button>
+          <button class="tech-filter" type="button" data-technology-filter="workflow" aria-pressed="false">Workflow <span>2</span></button>
+        </div>
+
+        <p class="tech-toolkit__result" data-technology-result aria-live="polite">Showing all 10 tools</p>
+        <div class="tech-tools-grid">
+          <article class="tech-tool-card" data-technology-card data-category="web">
+            <span class="tech-tool-card__topline"><span>WEB DEVELOPMENT</span><i data-lucide="arrow-up-right" aria-hidden="true"></i></span>
+            <span class="tech-tool-card__logo"><img src="../assets/images/html5-logo.svg" alt="" width="48" height="54" loading="lazy"></span>
+            <h3>HTML</h3><p>Building clear, well-structured page foundations.</p>
+            <span class="tech-tool-card__tag">Structure</span>
+          </article>
+          <article class="tech-tool-card" data-technology-card data-category="web">
+            <span class="tech-tool-card__topline"><span>WEB DEVELOPMENT</span><i data-lucide="arrow-up-right" aria-hidden="true"></i></span>
+            <span class="tech-tool-card__logo"><img src="../assets/icons/css-3.png" alt="" width="54" height="54" loading="lazy"></span>
+            <h3>CSS</h3><p>Styling responsive layouts and polished visual details.</p>
+            <span class="tech-tool-card__tag">Responsive UI</span>
+          </article>
+          <article class="tech-tool-card" data-technology-card data-category="web">
+            <span class="tech-tool-card__topline"><span>WEB DEVELOPMENT</span><i data-lucide="arrow-up-right" aria-hidden="true"></i></span>
+            <span class="tech-tool-card__logo"><img src="../assets/icons/js.png" alt="" width="54" height="54" loading="lazy"></span>
+            <h3>Vanilla JavaScript</h3><p>Adding lightweight interactions to web experiences.</p>
+            <span class="tech-tool-card__tag">Interactivity</span>
+          </article>
+          <article class="tech-tool-card" data-technology-card data-category="design">
+            <span class="tech-tool-card__topline"><span>DESIGN</span><i data-lucide="arrow-up-right" aria-hidden="true"></i></span>
+            <span class="tech-tool-card__logo"><img src="../assets/icons/figma.png" alt="" width="54" height="54" loading="lazy"></span>
+            <h3>Figma</h3><p>Creating interface concepts, reusable components, and handoff assets.</p>
+            <span class="tech-tool-card__tag">UI design</span>
+          </article>
+          <article class="tech-tool-card" data-technology-card data-category="design">
+            <span class="tech-tool-card__topline"><span>DESIGN</span><i data-lucide="arrow-up-right" aria-hidden="true"></i></span>
+            <span class="tech-tool-card__logo tech-tool-card__logo--xd" aria-hidden="true">Xd</span>
+            <h3>Adobe XD</h3><p>Developing and refining visual interface mockups.</p>
+            <span class="tech-tool-card__tag">Prototyping</span>
+          </article>
+          <article class="tech-tool-card" data-technology-card data-category="design">
+            <span class="tech-tool-card__topline"><span>DESIGN</span><i data-lucide="arrow-up-right" aria-hidden="true"></i></span>
+            <span class="tech-tool-card__logo"><img src="../assets/icons/canva.png" alt="" width="54" height="54" loading="lazy"></span>
+            <h3>Canva</h3><p>Designing practical marketing and branded content assets.</p>
+            <span class="tech-tool-card__tag">Visual content</span>
+          </article>
+          <article class="tech-tool-card" data-technology-card data-category="platforms">
+            <span class="tech-tool-card__topline"><span>PLATFORMS</span><i data-lucide="arrow-up-right" aria-hidden="true"></i></span>
+            <span class="tech-tool-card__logo"><img src="../assets/icons/wordpress-.png" alt="" width="54" height="54" loading="lazy"></span>
+            <h3>WordPress</h3><p>Managing website content and maintaining live pages.</p>
+            <span class="tech-tool-card__tag">Website care</span>
+          </article>
+          <article class="tech-tool-card" data-technology-card data-category="platforms">
+            <span class="tech-tool-card__topline"><span>PLATFORMS</span><i data-lucide="arrow-up-right" aria-hidden="true"></i></span>
+            <span class="tech-tool-card__logo"><img src="../assets/icons/mailchimp.png" alt="" width="54" height="54" loading="lazy"></span>
+            <h3>Mailchimp</h3><p>Supporting email marketing and campaign delivery.</p>
+            <span class="tech-tool-card__tag">Email campaigns</span>
+          </article>
+          <article class="tech-tool-card" data-technology-card data-category="workflow">
+            <span class="tech-tool-card__topline"><span>WORKFLOW</span><i data-lucide="arrow-up-right" aria-hidden="true"></i></span>
+            <span class="tech-tool-card__logo"><img src="../assets/icons/Vscode.png" alt="" width="54" height="54" loading="lazy"></span>
+            <h3>Visual Studio Code</h3><p>Writing, testing, and refining front-end code.</p>
+            <span class="tech-tool-card__tag">Code editor</span>
+          </article>
+          <article class="tech-tool-card" data-technology-card data-category="workflow">
+            <span class="tech-tool-card__topline"><span>WORKFLOW</span><i data-lucide="arrow-up-right" aria-hidden="true"></i></span>
+            <span class="tech-tool-card__logo"><i data-lucide="layout-template" aria-hidden="true"></i></span>
+            <h3>Design-to-dev handoff</h3><p>Preparing organized UI components and assets for implementation.</p>
+            <span class="tech-tool-card__tag">Collaboration</span>
+          </article>
+        </div>
+      </section>
+
+      <section class="tech-experience" id="experience" aria-labelledby="tech-experience-title">
+        <div class="tech-section-heading">
+          <div>
+            <p class="tech-section-heading__eyebrow">Experience behind the tools</p>
+            <h2 class="tech-section-heading__title" id="tech-experience-title">Skills put to work<span>.</span></h2>
+          </div>
+          <p class="tech-section-heading__description">A mix of freelance design, digital marketing, and hands-on technical support.</p>
+        </div>
+        <div class="tech-experience__list">
+          <article class="tech-experience-card">
+            <span class="tech-experience-card__index">01</span>
+            <div><p class="tech-experience-card__meta">FREELANCE · AUG–SEP 2026</p><h3>Marketing &amp; website support</h3><p>Managed WordPress content, supported Mailchimp email marketing, and designed brochure and marketing collateral for a UK-based client.</p></div>
+            <i data-lucide="arrow-up-right" aria-hidden="true"></i>
+          </article>
+          <article class="tech-experience-card">
+            <span class="tech-experience-card__index">02</span>
+            <div><p class="tech-experience-card__meta">FREELANCE · JAN–JUN 2023</p><h3>Web &amp; UI design</h3><p>Designed responsive landing pages, high-fidelity mockups, UI components, and design assets, collaborating with product and engineering on handoff.</p></div>
+            <i data-lucide="arrow-up-right" aria-hidden="true"></i>
+          </article>
+          <article class="tech-experience-card">
+            <span class="tech-experience-card__index">03</span>
+            <div><p class="tech-experience-card__meta">REGASCO LPGMA · JUL–DEC 2021</p><h3>Technical support</h3><p>Maintained hardware and operating systems, monitored CCTV systems, and handled troubleshooting and routine updates.</p></div>
+            <i data-lucide="arrow-up-right" aria-hidden="true"></i>
+          </article>
+        </div>
+      </section>
+
+      <section class="tech-education" aria-label="Education">
+        <span class="tech-education__icon"><i data-lucide="graduation-cap" aria-hidden="true"></i></span>
+        <div><p>EDUCATION</p><h2>Bachelor of Science in Information Technology</h2><span>Pampanga State University · 2021–2025</span></div>
+        <i class="tech-education__arrow" data-lucide="arrow-up-right" aria-hidden="true"></i>
+      </section>
+
+      <section class="tech-contact" aria-labelledby="tech-contact-title">
+        <div>
+          <p class="tech-section-heading__eyebrow">Have a project in mind?</p>
+          <h2 id="tech-contact-title">Let’s put good ideas to work.</h2>
+        </div>
+        <a href="contact.html">Get in touch <i data-lucide="arrow-up-right" aria-hidden="true"></i></a>
+      </section>
+    </div>
+  </main>
   <button class="back-to-top" type="button" aria-label="Back to top"><i data-lucide="arrow-up" aria-hidden="true"></i></button>
   <script src="https://unpkg.com/lucide@latest"></script>
   <script src="../script/main.js"></script>
   <script src="../script/navbar.js"></script>
   <script src="../script/clock.js"></script>
   <script src="../script/scroll.js"></script>
-  <script src="../script/spider-family.js"></script>
+  <script src="../script/technologies.js"></script>
+  <script src="../script/experience.js"></script>
 </body>
 </html>
