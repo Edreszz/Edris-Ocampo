@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="480" height="320" viewBox="0 0 480 320" fill="none">
+  <defs><linearGradient id="a" x1="30" y1="24" x2="448" y2="304" gradientUnits="userSpaceOnUse"><stop stop-color="#AAB5FF"/><stop offset="1" stop-color="#6975CC"/></linearGradient></defs>
+  <path fill="#292D3B" d="M0 0h480v320H0z"/><circle cx="414" cy="40" r="115" fill="#70C1B3" fill-opacity=".2"/>
+  <rect x="95" y="35" width="290" height="250" rx="22" fill="url(#a)"/><rect x="119" y="59" width="86" height="86" rx="26" fill="#292D3B"/>
+  <text x="140" y="123" fill="#D9DEFF" font-family="Arial,sans-serif" font-size="54" font-weight="700">E</text>
+  <text x="119" y="178" fill="#292D3B" font-family="Arial,sans-serif" font-size="12" font-weight="700" letter-spacing="3">EDRIS OCAMPO</text>
+  <text x="119" y="220" fill="#292D3B" font-family="Arial,sans-serif" font-size="25" font-weight="700">MAKE IT</text><text x="119" y="249" fill="#292D3B" font-family="Arial,sans-serif" font-size="25" font-weight="700">MEAN SOMETHING.</text>
+</svg>

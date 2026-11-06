@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="720" viewBox="0 0 1000 720" fill="none">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1000" y2="720" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#46364C"/>
+      <stop offset="1" stop-color="#20222F"/>
+    </linearGradient>
+    <linearGradient id="poster" x1="173" y1="102" x2="554" y2="595" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#F0C68F"/>
+      <stop offset="1" stop-color="#D58C78"/>
+    </linearGradient>
+  </defs>
+  <path fill="url(#bg)" d="M0 0h1000v720H0z"/>
+  <circle cx="876" cy="142" r="206" fill="#A78BFA" fill-opacity=".1"/>
+  <circle cx="92" cy="629" r="184" fill="#70C1B3" fill-opacity=".08"/>
+  <rect x="115" y="74" width="442" height="568" rx="19" fill="#151720" fill-opacity=".45"/>
+  <rect x="136" y="54" width="442" height="568" rx="18" fill="#F4F1EA"/>
+  <rect x="154" y="72" width="406" height="532" rx="10" fill="url(#poster)"/>
+  <circle cx="357" cy="265" r="99" fill="#F3D0AA" fill-opacity=".65"/>
+  <circle cx="360" cy="237" r="44" fill="#34303A"/>
+  <path d="M272 373c8-71 40-109 92-109 54 0 87 38 94 109l-12 98H282l-10-98Z" fill="#303541"/>
+  <path d="m306 310 55 54 59-57" stroke="#E9C0A2" stroke-width="8" stroke-linecap="round"/>
+  <text x="177" y="119" fill="#34303A" font-family="Arial,sans-serif" font-size="10" font-weight="700" letter-spacing="2">MAKE SPACE FOR YOURSELF</text>
+  <text x="177" y="504" fill="#282732" font-family="Arial,sans-serif" font-size="38" font-weight="700" letter-spacing="-1.5">SHOW UP</text>
+  <text x="177" y="544" fill="#282732" font-family="Arial,sans-serif" font-size="38" font-weight="700" letter-spacing="-1.5">AS YOU ARE.</text>
+  <text x="177" y="577" fill="#51454A" font-family="Arial,sans-serif" font-size="11" font-weight="700" letter-spacing="2">A STORY WORTH SEEING</text>
+  <rect x="638" y="175" width="258" height="364" rx="25" fill="#F4F5FA"/>
+  <rect x="651" y="188" width="232" height="338" rx="18" fill="#E9EAF1"/>
+  <rect x="651" y="188" width="232" height="186" rx="18" fill="url(#poster)"/>
+  <circle cx="767" cy="258" r="42" fill="#F3D0AA"/>
+  <circle cx="768" cy="246" r="20" fill="#34303A"/>
+  <path d="M719 328c3-39 20-60 49-60s48 21 51 60v27H719v-27Z" fill="#303541"/>
+  <text x="670" y="404" fill="#777EE2" font-family="Arial,sans-serif" font-size="9" font-weight="700" letter-spacing="1.5">A MORE HUMAN STORY</text>
+  <text x="670" y="431" fill="#252734" font-family="Arial,sans-serif" font-size="18" font-weight="700">Own your point</text>
+  <text x="670" y="453" fill="#252734" font-family="Arial,sans-serif" font-size="18" font-weight="700">of view.</text>
+  <rect x="670" y="472" width="118" height="29" rx="14.5" fill="#34394F"/>
+  <text x="685" y="491" fill="#F4F5FA" font-family="Arial,sans-serif" font-size="9" font-weight="700" letter-spacing=".5">READ THE STORY ↗</text>
+  <text x="653" y="578" fill="#D7D8E1" font-family="Arial,sans-serif" font-size="12" font-weight="700" letter-spacing="2">PRINT + SOCIAL CAMPAIGN</text>
+  <text x="90" y="680" fill="#B5B9C9" font-family="Arial,sans-serif" font-size="13" font-weight="700" letter-spacing="3">03 — ONE STORY, MANY FORMATS</text>
+</svg>

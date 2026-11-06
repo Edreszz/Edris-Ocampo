@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="480" height="320" viewBox="0 0 480 320" fill="none">
+  <defs><linearGradient id="a" x1="31" y1="14" x2="467" y2="309" gradientUnits="userSpaceOnUse"><stop stop-color="#314551"/><stop offset="1" stop-color="#232736"/></linearGradient><linearGradient id="b" x1="247" y1="95" x2="423" y2="246" gradientUnits="userSpaceOnUse"><stop stop-color="#AAB5FF"/><stop offset="1" stop-color="#70C1B3"/></linearGradient></defs>
+  <path fill="url(#a)" d="M0 0h480v320H0z"/><rect x="37" y="32" width="406" height="256" rx="15" fill="#F4F5FA"/>
+  <rect x="37" y="32" width="406" height="31" rx="15" fill="#E4E7F0"/><circle cx="56" cy="48" r="4" fill="#F07D7D"/><circle cx="70" cy="48" r="4" fill="#F2C46C"/><circle cx="84" cy="48" r="4" fill="#70C1B3"/>
+  <rect x="58" y="81" width="120" height="8" rx="4" fill="#34394F"/><rect x="303" y="78" width="112" height="18" rx="9" fill="#E7EAF2"/>
+  <text x="58" y="135" fill="#6879DC" font-family="Arial,sans-serif" font-size="9" font-weight="700" letter-spacing="2">DESIGN THAT FEELS LIKE YOU</text>
+  <text x="58" y="165" fill="#252734" font-family="Arial,sans-serif" font-size="24" font-weight="700">A better kind</text><text x="58" y="192" fill="#6879DC" font-family="Arial,sans-serif" font-size="24" font-weight="700">of first look.</text>
+  <rect x="58" y="209" width="151" height="6" rx="3" fill="#C5C9D5"/><rect x="58" y="222" width="123" height="6" rx="3" fill="#D6D9E1"/>
+  <rect x="58" y="240" width="91" height="25" rx="12.5" fill="#34394F"/><rect x="251" y="110" width="164" height="143" rx="15" fill="url(#b)"/>
+  <circle cx="333" cy="153" r="27" fill="#F0BE80"/><path d="M285 225c5-43 22-62 49-62 29 0 47 20 52 62v12H285v-12Z" fill="#323747"/>
+</svg>

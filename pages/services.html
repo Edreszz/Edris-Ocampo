@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#252734">
+  <meta name="description" content="Services portfolio page.">
+  <title>Services | Personal Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../style/themes.css">
+  <link rel="stylesheet" href="../style/main.css">
+  <link rel="stylesheet" href="../style/navbar.css">
+  <link rel="stylesheet" href="../style/responsive.css">
+  <script src="../script/theme.js"></script>
+</head>
+<body>
+  <div class="scroll-progress" aria-hidden="true"><div class="scroll-progress__bar" id="scroll-progress"></div></div>
+  <header class="site-header">
+    <nav class="navbar" aria-label="Main navigation">
+      <div class="navbar__brand">
+        <a class="navbar__brand-name" href="../index.html">Edris Ocampo</a>
+        <span class="navbar__brand-divider" aria-hidden="true"></span>
+        <span class="navbar__brand-label">Personal Portfolio System</span>
+      </div>
+      <button class="navbar__menu-toggle" type="button" aria-label="Open navigation menu" aria-expanded="false" aria-controls="primary-navigation">
+        <i class="navbar__menu-icon" data-lucide="menu" aria-hidden="true"></i>
+        <i class="navbar__close-icon" data-lucide="x" aria-hidden="true"></i>
+      </button>
+      <ul class="navbar__links" id="primary-navigation">
+        <li><a class="navbar__link" data-page="home" href="../index.html">Home</a></li>
+        <li><a class="navbar__link" data-page="services" href="services.html">Services</a></li>
+        <li><a class="navbar__link" data-page="technologies" href="technologies.html">Technologies</a></li>
+        <li class="navbar__dropdown">
+          <button class="navbar__link navbar__dropdown-toggle" type="button" data-page="about" aria-expanded="false" aria-controls="about-menu">
+            About <i data-lucide="chevron-down" aria-hidden="true"></i>
+          </button>
+          <div class="navbar__dropdown-menu" id="about-menu">
+            <p class="navbar__dropdown-heading">Profile</p>
+            <ul>
+              <li><a class="navbar__dropdown-item" href="about.html">About</a></li>
+              <li><span class="navbar__dropdown-item">Experience</span></li>
+              <li><span class="navbar__dropdown-item">Education</span></li>
+              <li><span class="navbar__dropdown-item">Certifications</span></li>
+            </ul>
+          </div>
+        </li>
+        <li><a class="navbar__link" data-page="contact" href="contact.html">Contact</a></li>
+        <li class="navbar__dropdown">
+          <button class="navbar__link navbar__dropdown-toggle" type="button" aria-expanded="false" aria-controls="pages-menu">
+            Pages <i data-lucide="chevron-down" aria-hidden="true"></i>
+          </button>
+          <div class="navbar__dropdown-menu" id="pages-menu">
+            <p class="navbar__dropdown-heading">Other</p>
+            <ul>
+              <li><span class="navbar__dropdown-item">404</span></li>
+              <li><span class="navbar__dropdown-item">Blogs</span></li>
+              <li><span class="navbar__dropdown-item">Ecommerce</span></li>
+              <li><span class="navbar__dropdown-item">Websites</span></li>
+              <li><span class="navbar__dropdown-item">Other Projects</span></li>
+            </ul>
+          </div>
+        </li>
+      </ul>
+      <div class="navbar__controls">
+        <span class="navbar__clock" aria-label="Local time"><i data-lucide="clock-3" aria-hidden="true"></i><time id="local-clock">--:--:--</time></span>
+        <button class="icon-button theme-toggle" type="button" aria-label="Switch to light theme" aria-pressed="false">
+          <i class="theme-toggle__moon" data-lucide="moon" aria-hidden="true"></i><i class="theme-toggle__sun" data-lucide="sun" aria-hidden="true"></i>
+        </button>
+      </div>
+    </nav>
+  </header>
+  <main class="page-content services-page" id="main-content">
+    <div class="content-container">
+      <section aria-labelledby="services-page-title">
+        <div class="services-page__hero">
+          <div>
+            <p class="services-overview__eyebrow"><span aria-hidden="true"></span> Services · Creative + technical</p>
+            <h1 class="services-page__title" id="services-page-title">
+              Let’s make your
+              <span>next idea feel real.</span>
+            </h1>
+          </div>
+          <div class="services-page__hero-aside">
+            <p>Design and digital support for people who want their ideas to look clear, feel considered, and work smoothly.</p>
+            <a href="contact.html">Tell me what you need <i data-lucide="arrow-up-right" aria-hidden="true"></i></a>
+          </div>
+        </div>
+
+        <div class="services-page__grid">
+          <article class="service-detail-card" id="service-web-design">
+            <div class="service-detail-card__top">
+              <span class="service-card__icon"><i data-lucide="panels-top-left" aria-hidden="true"></i></span>
+              <span class="service-card__number">01 / DIGITAL</span>
+            </div>
+            <h2>UI/UX &amp; Web Design</h2>
+            <p>From early page structure to polished interface design, create a website that communicates clearly and feels natural to use on any screen.</p>
+            <h3>Good for</h3>
+            <ul><li>Landing pages and small-business websites</li><li>Responsive page layouts and UI components</li><li>Wireframes, visual mockups, and handoff-ready assets</li></ul>
+            <div class="service-detail-card__tools"><span>Figma</span><span>Adobe XD</span><span>Responsive design</span></div>
+            <a href="contact.html?service=web-design">Discuss a website <i data-lucide="arrow-up-right" aria-hidden="true"></i></a>
+          </article>
+
+          <article class="service-detail-card" id="service-wordpress">
+            <div class="service-detail-card__top">
+              <span class="service-card__icon service-card__icon--mint"><i data-lucide="blocks" aria-hidden="true"></i></span>
+              <span class="service-card__number">02 / WEB CARE</span>
+            </div>
+            <h2>WordPress Management</h2>
+            <p>Keep your site’s content current and your pages organized with practical, careful WordPress management.</p>
+            <h3>Good for</h3>
+            <ul><li>Updating page content and imagery</li><li>Managing existing site pages</li><li>Routine website checks and upkeep</li></ul>
+            <div class="service-detail-card__tools"><span>WordPress</span><span>Content updates</span><span>Site upkeep</span></div>
+            <a href="contact.html?service=wordpress">Discuss website support <i data-lucide="arrow-up-right" aria-hidden="true"></i></a>
+          </article>
+
+          <article class="service-detail-card" id="service-email">
+            <div class="service-detail-card__top">
+              <span class="service-card__icon service-card__icon--violet"><i data-lucide="mail" aria-hidden="true"></i></span>
+              <span class="service-card__number">03 / CAMPAIGNS</span>
+            </div>
+            <h2>Email Marketing</h2>
+            <p>Make every email feel like part of your brand with clear content, thoughtful layouts, and campaign setup support.</p>
+            <h3>Good for</h3>
+            <ul><li>Branded email campaign layouts</li><li>Mailchimp campaign preparation</li><li>Organizing content and calls to action</li></ul>
+            <div class="service-detail-card__tools"><span>Mailchimp</span><span>Email design</span><span>Content layout</span></div>
+            <a href="contact.html?service=email-marketing">Discuss an email campaign <i data-lucide="arrow-up-right" aria-hidden="true"></i></a>
+          </article>
+
+          <article class="service-detail-card" id="service-collateral">
+            <div class="service-detail-card__top">
+              <span class="service-card__icon service-card__icon--violet"><i data-lucide="panels-top-left" aria-hidden="true"></i></span>
+              <span class="service-card__number">04 / BRAND</span>
+            </div>
+            <h2>Brand &amp; Marketing Collateral</h2>
+            <p>Give your brand a consistent look across the materials people see, share, and keep.</p>
+            <h3>Good for</h3>
+            <ul><li>PDF brochures and promotional materials</li><li>Social and digital marketing graphics</li><li>Extending existing visual brand elements</li></ul>
+            <div class="service-detail-card__tools"><span>Visual design</span><span>PDF layout</span><span>Brand consistency</span></div>
+            <a href="contact.html?service=collateral">Discuss design materials <i data-lucide="arrow-up-right" aria-hidden="true"></i></a>
+          </article>
+
+          <article class="service-detail-card" id="service-handoff">
+            <div class="service-detail-card__top">
+              <span class="service-card__icon"><i data-lucide="component" aria-hidden="true"></i></span>
+              <span class="service-card__number">05 / HANDOFF</span>
+            </div>
+            <h2>UI Components &amp; Design Assets</h2>
+            <p>Make the next steps easier with tidy reusable components, organized mockups, and useful assets for implementation.</p>
+            <h3>Good for</h3>
+            <ul><li>Reusable Figma components and UI patterns</li><li>Organized design and export-ready assets</li><li>Clear collaboration with developers</li></ul>
+            <div class="service-detail-card__tools"><span>Figma</span><span>UI systems</span><span>Design handoff</span></div>
+            <a href="contact.html?service=design-handoff">Discuss a design handoff <i data-lucide="arrow-up-right" aria-hidden="true"></i></a>
+          </article>
+
+          <article class="service-detail-card" id="service-it-support">
+            <div class="service-detail-card__top">
+              <span class="service-card__icon service-card__icon--mint"><i data-lucide="settings-2" aria-hidden="true"></i></span>
+              <span class="service-card__number">06 / TECH SUPPORT</span>
+            </div>
+            <h2>Practical IT Support</h2>
+            <p>Get a hand with everyday computer issues and setup from someone with real technical support experience.</p>
+            <h3>Good for</h3>
+            <ul><li>Basic PC and software troubleshooting</li><li>System setup, updates, and maintenance</li><li>Patient, straightforward technical help</li></ul>
+            <div class="service-detail-card__tools"><span>PC support</span><span>Troubleshooting</span><span>System maintenance</span></div>
+            <a href="contact.html?service=it-support">Ask about technical help <i data-lucide="arrow-up-right" aria-hidden="true"></i></a>
+          </article>
+        </div>
+
+        <section class="service-process" aria-labelledby="service-process-title">
+          <div class="service-process__intro">
+            <p class="services-overview__eyebrow"><span aria-hidden="true"></span> Simple, collaborative, intentional</p>
+            <h2 id="service-process-title">A good process makes good work better.</h2>
+            <p>No mystery steps. We’ll agree on the goal, keep communication open, and make sure the finished work is ready for its next step.</p>
+          </div>
+          <ol class="service-process__steps">
+            <li><span>01</span><div><h3>Start with the goal</h3><p>Share what you’re making, who it’s for, and what you need help with.</p></div></li>
+            <li><span>02</span><div><h3>Shape the solution</h3><p>Align on the scope and direction before the details take shape.</p></div></li>
+            <li><span>03</span><div><h3>Make it useful</h3><p>Refine the work together and prepare the final files or updates for use.</p></div></li>
+          </ol>
+        </section>
+
+        <div class="services-overview__footer services-page__footer">
+          <p><span aria-hidden="true"></span> Have something in mind? Let’s figure out the right next step.</p>
+          <a href="contact.html">Start a conversation <i data-lucide="arrow-up-right" aria-hidden="true"></i></a>
+        </div>
+      </section>
+    </div>
+  </main>
+  <button class="back-to-top" type="button" aria-label="Back to top"><i data-lucide="arrow-up" aria-hidden="true"></i></button>
+  <script src="https://unpkg.com/lucide@latest"></script>
+  <script src="../script/main.js"></script>
+  <script src="../script/navbar.js"></script>
+  <script src="../script/clock.js"></script>
+  <script src="../script/scroll.js"></script>
+  <script src="../script/spider-family.js"></script>
+</body>
+</html>

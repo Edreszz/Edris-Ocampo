@@ -1,0 +1,581 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#252734">
+  <meta name="description" content="Edris is a graphic and UI/UX designer creating clear, thoughtful digital experiences and modern websites.">
+  <title>Edris | Graphic &amp; UI/UX Designer</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style/themes.css">
+  <link rel="stylesheet" href="style/main.css">
+  <link rel="stylesheet" href="style/navbar.css">
+  <link rel="stylesheet" href="style/responsive.css">
+  <script src="script/theme.js"></script>
+</head>
+<body class="home-page">
+  <div class="scroll-progress" aria-hidden="true">
+    <div class="scroll-progress__bar" id="scroll-progress"></div>
+  </div>
+
+  <header class="site-header">
+    <nav class="navbar" aria-label="Main navigation">
+      <div class="navbar__brand">
+        <a class="navbar__brand-name" href="index.html">Edris Ocampo</a>
+        <span class="navbar__brand-divider" aria-hidden="true"></span>
+        <span class="navbar__brand-label">Personal Portfolio System</span>
+      </div>
+      <button class="navbar__menu-toggle" type="button" aria-label="Open navigation menu" aria-expanded="false" aria-controls="primary-navigation">
+        <i class="navbar__menu-icon" data-lucide="menu" aria-hidden="true"></i>
+        <i class="navbar__close-icon" data-lucide="x" aria-hidden="true"></i>
+      </button>
+      <ul class="navbar__links" id="primary-navigation">
+        <li><a class="navbar__link" data-page="home" href="index.html">Home</a></li>
+        <li><a class="navbar__link" data-page="services" href="pages/services.html">Services</a></li>
+        <li><a class="navbar__link" data-page="technologies" href="pages/technologies.html">Technologies</a></li>
+        <li class="navbar__dropdown">
+          <button class="navbar__link navbar__dropdown-toggle" type="button" data-page="about" aria-expanded="false" aria-controls="about-menu">
+            About <i data-lucide="chevron-down" aria-hidden="true"></i>
+          </button>
+          <div class="navbar__dropdown-menu" id="about-menu">
+            <p class="navbar__dropdown-heading">Profile</p>
+            <ul>
+              <li><a class="navbar__dropdown-item" href="pages/about.html">About</a></li>
+              <li><span class="navbar__dropdown-item">Experience</span></li>
+              <li><span class="navbar__dropdown-item">Education</span></li>
+              <li><span class="navbar__dropdown-item">Certifications</span></li>
+            </ul>
+          </div>
+        </li>
+        
+        <li class="navbar__dropdown">
+          <button class="navbar__link navbar__dropdown-toggle" type="button" aria-expanded="false" aria-controls="pages-menu">
+            Pages <i data-lucide="chevron-down" aria-hidden="true"></i>
+          </button>
+          <div class="navbar__dropdown-menu" id="pages-menu">
+            <p class="navbar__dropdown-heading">Other</p>
+            <ul>
+              <li><span class="navbar__dropdown-item">404</span></li>
+              <li><span class="navbar__dropdown-item">Blogs</span></li>
+              <li><span class="navbar__dropdown-item">Ecommerce</span></li>
+              <li><span class="navbar__dropdown-item">Websites</span></li>
+              <li><span class="navbar__dropdown-item">Other Projects</span></li>
+            </ul>
+          </div>
+        </li>
+<li><a class="navbar__link" data-page="contact" href="pages/contact.html">Contact</a></li>
+      </ul>
+      <div class="navbar__controls">
+        <span class="navbar__clock" aria-label="Local time">
+          <i data-lucide="clock-3" aria-hidden="true"></i>
+          <time id="local-clock">--:--:--</time>
+        </span>
+        <button class="icon-button theme-toggle" type="button" aria-label="Switch to light theme" aria-pressed="false">
+          <i class="theme-toggle__moon" data-lucide="moon" aria-hidden="true"></i>
+          <i class="theme-toggle__sun" data-lucide="sun" aria-hidden="true"></i>
+        </button>
+      </div>
+    </nav>
+  </header>
+
+  <main class="page-content" id="main-content">
+    <div class="content-container">
+      <section class="home-hero" aria-labelledby="home-title">
+        <div class="home-hero__copy">
+          <p class="home-hero__availability"><span aria-hidden="true"></span> Available and looking for work</p>
+          <p class="home-hero__eyebrow"><span aria-hidden="true"></span> Graphic &amp; UI/UX Designer</p>
+          <h1 class="home-hero__title" id="home-title">
+            Thoughtful design.
+            <span>Digital experiences that move people.</span>
+          </h1>
+          <p class="home-hero__description">
+            I turn ideas into clear, engaging brand visuals and user-friendly websites—bringing creativity and usability together at every step.
+          </p>
+
+          <!-- <ul class="home-hero__skills" aria-label="Areas of focus">
+            <li>Visual design</li>
+            <li>UI/UX</li>
+            <li>Web experiences</li>
+          </ul> -->
+
+          <div class="home-hero__actions">
+            <a class="home-hero__button home-hero__button--primary" href="pages/services.html">
+              Explore my services <i data-lucide="arrow-up-right" aria-hidden="true"></i>
+            </a>
+            <a class="home-hero__button home-hero__button--secondary" href="pages/contact.html">
+              Let’s connect <i data-lucide="move-up-right" aria-hidden="true"></i>
+            </a>
+          </div>
+
+        </div>
+
+        <div class="home-hero__visual">
+          <div class="home-hero__visual-heading">
+            <!-- <span>DESIGN WITH PURPOSE</span> -->
+          </div>
+          <div class="home-hero__portrait-stage">
+            <div class="home-hero__portrait-glow" aria-hidden="true"></div>
+            <img
+              class="home-hero__portrait"
+              src="assets/images/edris-leaning.png"
+              alt="Edris in a black suit, leaning forward"
+              width="386"
+              height="594"
+              fetchpriority="high"
+            >
+            <div class="home-hero__visual-markers" aria-hidden="true">
+              <span class="home-hero__visual-marker home-hero__visual-marker--design"><i data-lucide="pen-tool"></i></span>
+              <span class="home-hero__visual-marker home-hero__visual-marker--digital"><i data-lucide="layout-dashboard"></i></span>
+              <span class="home-hero__visual-marker home-hero__visual-marker--creative"><i data-lucide="sparkles"></i></span>
+            </div>
+            <ul class="home-hero__social-links" aria-label="Social links">
+              <li class="home-hero__social-link home-hero__social-link--facebook">
+                <a href="#" aria-label="Facebook">
+                  <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M13.5 21v-8h2.8l.4-3h-3.2V8.1c0-.9.3-1.5 1.6-1.5h1.7V3.9c-.3 0-1.4-.1-2.6-.1-2.6 0-4.4 1.6-4.4 4.5V10H7v3h2.8v8h3.7Z"></path></svg>
+                </a>
+              </li>
+              <li class="home-hero__social-link home-hero__social-link--email">
+                <a href="#" aria-label="Email">
+                  <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"></rect><path d="m3 7 9 6 9-6"></path></svg>
+                </a>
+              </li>
+              <li class="home-hero__social-link home-hero__social-link--telegram">
+                <a href="#" aria-label="Telegram">
+                  <svg viewBox="0 0 24 24" aria-hidden="true"><path d="m22 2-7 20-4-9-9-4Z"></path><path d="M22 2 11 13"></path></svg>
+                </a>
+              </li>
+              <li class="home-hero__social-link home-hero__social-link--whatsapp">
+                <a href="#" aria-label="WhatsApp">
+                  <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20.5 11.8a8.5 8.5 0 0 1-12.6 7.4L3 20.5l1.3-4.7A8.5 8.5 0 1 1 20.5 11.8Z"></path><path d="M8.2 8.1c.2-.5.4-.5.7-.5h.5c.2 0 .4.1.5.4l.8 1.8c.1.2.1.4 0 .6l-.5.7c-.2.2-.2.4 0 .6.6 1 1.5 1.8 2.6 2.3.2.1.4.1.6-.1l.8-.9c.2-.2.4-.2.7-.1l1.7.8c.3.1.4.3.4.5 0 .3-.2 1.2-.8 1.6-.5.4-1.2.6-2 .4-1.1-.2-2.4-.8-3.8-2-1.2-1.1-2-2.4-2.2-3.4-.3-1 .1-1.9.4-2.4Z"></path></svg>
+                </a>
+              </li>
+              <li class="home-hero__social-link home-hero__social-link--website">
+                <a href="#" aria-label="Website">
+                  <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9"></circle><path d="M3 12h18M12 3a15 15 0 0 1 0 18M12 3a15 15 0 0 0 0 18"></path></svg>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <section class="projects" id="projects" aria-labelledby="projects-title">
+        <div class="projects__intro">
+          <div class="projects__intro-copy">
+            <p class="projects__eyebrow"><span aria-hidden="true"></span> Selected concepts &amp; creative explorations</p>
+            <h2 class="projects__title" id="projects-title">
+              Good design gets noticed.
+              <span>Great design gets remembered.</span>
+            </h2>
+          </div>
+          <p class="projects__description">
+            Three concept directions exploring visual identity, thoughtful digital experiences, and campaign storytelling.
+          </p>
+        </div>
+
+        <div class="projects__grid">
+          <article class="project-card project-card--brand">
+            <div class="project-card__visual">
+              <img src="assets/images/project-identity.svg" alt="Visual identity concept with a monogram, lavender palette, and brand applications" loading="lazy" width="1000" height="720">
+              <span class="project-card__number">01 / CONCEPT</span>
+              <span class="project-card__visual-caption"><i data-lucide="sparkles" aria-hidden="true"></i> Identity system · 2026</span>
+            </div>
+            <div class="project-card__body">
+              <div class="project-card__meta"><span>Branding</span><span>Visual design</span></div>
+              <h3>A personal identity with character.</h3>
+              <p>A visual identity concept that gives a personal story a warm, confident, and unmistakable point of view.</p>
+              <ul class="project-card__tags" aria-label="Project skills">
+                <li>Art direction</li><li>Identity</li><li>Storytelling</li>
+              </ul>
+              <button class="project-card__action" type="button" data-project-preview="identity" aria-haspopup="dialog" aria-controls="project-preview">
+                View Live <i data-lucide="arrow-up-right" aria-hidden="true"></i>
+              </button>
+            </div>
+          </article>
+
+          <article class="project-card project-card--digital">
+            <div class="project-card__visual">
+              <img src="assets/images/project-interface.svg" alt="Responsive portfolio interface concept with a project grid and contact button" loading="lazy" width="1000" height="720">
+              <span class="project-card__number">02 / CONCEPT</span>
+              <span class="project-card__visual-caption"><i data-lucide="mouse-pointer-2" aria-hidden="true"></i> Portfolio experience · 2026</span>
+            </div>
+            <div class="project-card__body">
+              <div class="project-card__meta"><span>UI/UX</span><span>Web design</span></div>
+              <h3>A portfolio built around the work.</h3>
+              <p>A responsive portfolio concept with a clear path through the story, the work, and the next step.</p>
+              <ul class="project-card__tags" aria-label="Project skills">
+                <li>UX thinking</li><li>Interface</li><li>Responsive</li>
+              </ul>
+              <button class="project-card__action" type="button" data-project-preview="portfolio" aria-haspopup="dialog" aria-controls="project-preview">
+                View Live <i data-lucide="arrow-up-right" aria-hidden="true"></i>
+              </button>
+            </div>
+          </article>
+
+          <article class="project-card project-card--portrait">
+            <div class="project-card__visual">
+              <img src="assets/images/project-campaign.svg" alt="Editorial campaign concept showing a type-led poster and social media layout" loading="lazy" width="1000" height="720">
+              <span class="project-card__number">03 / CONCEPT</span>
+              <span class="project-card__visual-caption"><i data-lucide="aperture" aria-hidden="true"></i> Editorial campaign · 2026</span>
+            </div>
+            <div class="project-card__body">
+              <div class="project-card__meta"><span>Editorial</span><span>Campaign design</span></div>
+              <h3>One story, many formats.</h3>
+              <p>An editorial campaign concept that adapts one personal story across print and social layouts.</p>
+              <ul class="project-card__tags" aria-label="Project skills">
+                <li>Editorial</li><li>Composition</li><li>Art direction</li>
+              </ul>
+              <button class="project-card__action" type="button" data-project-preview="campaign" aria-haspopup="dialog" aria-controls="project-preview">
+                View Live <i data-lucide="arrow-up-right" aria-hidden="true"></i>
+              </button>
+            </div>
+          </article>
+        </div>
+
+        <section class="mini-projects" aria-labelledby="mini-projects-title">
+          <div class="mini-projects__heading">
+            <div>
+              <p class="mini-projects__eyebrow"><span aria-hidden="true"></span> A fast scroll through the sketchbook</p>
+              <h3 id="mini-projects-title">Project showcase <span>grid</span></h3>
+            </div>
+            <button class="mini-projects__motion-toggle" type="button" aria-label="Pause project showcase animation" aria-pressed="false">
+              Pause motion
+            </button>
+          </div>
+          <div class="mini-projects__viewport" role="region" aria-label="Scrolling mini project showcase">
+            <div class="mini-projects__track">
+              <div class="mini-projects__group">
+                <button class="mini-projects__card" type="button" data-project-preview="mini-brand">
+                  <span class="mini-projects__image"><img src="assets/images/mini-brand.svg" alt="" width="480" height="320" loading="lazy"></span>
+                  <span class="mini-projects__card-copy"><span class="mini-projects__card-title">Brand Identity</span><span class="mini-projects__card-type">Branding · 2026</span></span>
+                  <span class="mini-projects__card-arrow" aria-hidden="true">↗</span>
+                </button>
+                <button class="mini-projects__card" type="button" data-project-preview="mini-landing">
+                  <span class="mini-projects__image"><img src="assets/images/mini-landing.svg" alt="" width="480" height="320" loading="lazy"></span>
+                  <span class="mini-projects__card-copy"><span class="mini-projects__card-title">Landing Page</span><span class="mini-projects__card-type">Web design · 2026</span></span>
+                  <span class="mini-projects__card-arrow" aria-hidden="true">↗</span>
+                </button>
+                <button class="mini-projects__card" type="button" data-project-preview="mini-social">
+                  <span class="mini-projects__image"><img src="assets/images/mini-social.svg" alt="" width="480" height="320" loading="lazy"></span>
+                  <span class="mini-projects__card-copy"><span class="mini-projects__card-title">Social Campaign</span><span class="mini-projects__card-type">Campaign · 2026</span></span>
+                  <span class="mini-projects__card-arrow" aria-hidden="true">↗</span>
+                </button>
+                <button class="mini-projects__card" type="button" data-project-preview="mini-mobile">
+                  <span class="mini-projects__image"><img src="assets/images/mini-mobile.svg" alt="" width="480" height="320" loading="lazy"></span>
+                  <span class="mini-projects__card-copy"><span class="mini-projects__card-title">Mobile UI</span><span class="mini-projects__card-type">UI/UX · 2026</span></span>
+                  <span class="mini-projects__card-arrow" aria-hidden="true">↗</span>
+                </button>
+                <button class="mini-projects__card" type="button" data-project-preview="mini-poster">
+                  <span class="mini-projects__image"><img src="assets/images/mini-poster.svg" alt="" width="480" height="320" loading="lazy"></span>
+                  <span class="mini-projects__card-copy"><span class="mini-projects__card-title">Event Poster</span><span class="mini-projects__card-type">Print · 2026</span></span>
+                  <span class="mini-projects__card-arrow" aria-hidden="true">↗</span>
+                </button>
+                <button class="mini-projects__card" type="button" data-project-preview="mini-editorial">
+                  <span class="mini-projects__image"><img src="assets/images/mini-editorial.svg" alt="" width="480" height="320" loading="lazy"></span>
+                  <span class="mini-projects__card-copy"><span class="mini-projects__card-title">Editorial Layout</span><span class="mini-projects__card-type">Editorial · 2026</span></span>
+                  <span class="mini-projects__card-arrow" aria-hidden="true">↗</span>
+                </button>
+                <button class="mini-projects__card" type="button" data-project-preview="mini-icons">
+                  <span class="mini-projects__image"><img src="assets/images/mini-icons.svg" alt="" width="480" height="320" loading="lazy"></span>
+                  <span class="mini-projects__card-copy"><span class="mini-projects__card-title">Icon Collection</span><span class="mini-projects__card-type">Visual design · 2026</span></span>
+                  <span class="mini-projects__card-arrow" aria-hidden="true">↗</span>
+                </button>
+                <button class="mini-projects__card" type="button" data-project-preview="mini-email">
+                  <span class="mini-projects__image"><img src="assets/images/mini-email.svg" alt="" width="480" height="320" loading="lazy"></span>
+                  <span class="mini-projects__card-copy"><span class="mini-projects__card-title">Email Design</span><span class="mini-projects__card-type">Digital · 2026</span></span>
+                  <span class="mini-projects__card-arrow" aria-hidden="true">↗</span>
+                </button>
+              </div>
+              <div class="mini-projects__group" aria-hidden="true">
+                <button class="mini-projects__card" type="button" tabindex="-1" data-project-preview="mini-brand">
+                  <span class="mini-projects__image"><img src="assets/images/mini-brand.svg" alt="" width="480" height="320" loading="lazy"></span>
+                  <span class="mini-projects__card-copy"><span class="mini-projects__card-title">Brand Identity</span><span class="mini-projects__card-type">Branding · 2026</span></span>
+                  <span class="mini-projects__card-arrow" aria-hidden="true">↗</span>
+                </button>
+                <button class="mini-projects__card" type="button" tabindex="-1" data-project-preview="mini-landing">
+                  <span class="mini-projects__image"><img src="assets/images/mini-landing.svg" alt="" width="480" height="320" loading="lazy"></span>
+                  <span class="mini-projects__card-copy"><span class="mini-projects__card-title">Landing Page</span><span class="mini-projects__card-type">Web design · 2026</span></span>
+                  <span class="mini-projects__card-arrow" aria-hidden="true">↗</span>
+                </button>
+                <button class="mini-projects__card" type="button" tabindex="-1" data-project-preview="mini-social">
+                  <span class="mini-projects__image"><img src="assets/images/mini-social.svg" alt="" width="480" height="320" loading="lazy"></span>
+                  <span class="mini-projects__card-copy"><span class="mini-projects__card-title">Social Campaign</span><span class="mini-projects__card-type">Campaign · 2026</span></span>
+                  <span class="mini-projects__card-arrow" aria-hidden="true">↗</span>
+                </button>
+                <button class="mini-projects__card" type="button" tabindex="-1" data-project-preview="mini-mobile">
+                  <span class="mini-projects__image"><img src="assets/images/mini-mobile.svg" alt="" width="480" height="320" loading="lazy"></span>
+                  <span class="mini-projects__card-copy"><span class="mini-projects__card-title">Mobile UI</span><span class="mini-projects__card-type">UI/UX · 2026</span></span>
+                  <span class="mini-projects__card-arrow" aria-hidden="true">↗</span>
+                </button>
+                <button class="mini-projects__card" type="button" tabindex="-1" data-project-preview="mini-poster">
+                  <span class="mini-projects__image"><img src="assets/images/mini-poster.svg" alt="" width="480" height="320" loading="lazy"></span>
+                  <span class="mini-projects__card-copy"><span class="mini-projects__card-title">Event Poster</span><span class="mini-projects__card-type">Print · 2026</span></span>
+                  <span class="mini-projects__card-arrow" aria-hidden="true">↗</span>
+                </button>
+                <button class="mini-projects__card" type="button" tabindex="-1" data-project-preview="mini-editorial">
+                  <span class="mini-projects__image"><img src="assets/images/mini-editorial.svg" alt="" width="480" height="320" loading="lazy"></span>
+                  <span class="mini-projects__card-copy"><span class="mini-projects__card-title">Editorial Layout</span><span class="mini-projects__card-type">Editorial · 2026</span></span>
+                  <span class="mini-projects__card-arrow" aria-hidden="true">↗</span>
+                </button>
+                <button class="mini-projects__card" type="button" tabindex="-1" data-project-preview="mini-icons">
+                  <span class="mini-projects__image"><img src="assets/images/mini-icons.svg" alt="" width="480" height="320" loading="lazy"></span>
+                  <span class="mini-projects__card-copy"><span class="mini-projects__card-title">Icon Collection</span><span class="mini-projects__card-type">Visual design · 2026</span></span>
+                  <span class="mini-projects__card-arrow" aria-hidden="true">↗</span>
+                </button>
+                <button class="mini-projects__card" type="button" tabindex="-1" data-project-preview="mini-email">
+                  <span class="mini-projects__image"><img src="assets/images/mini-email.svg" alt="" width="480" height="320" loading="lazy"></span>
+                  <span class="mini-projects__card-copy"><span class="mini-projects__card-title">Email Design</span><span class="mini-projects__card-type">Digital · 2026</span></span>
+                  <span class="mini-projects__card-arrow" aria-hidden="true">↗</span>
+                </button>
+              </div>
+            </div>
+          </div>
+          <p class="mini-projects__hint"><i data-lucide="move-right" aria-hidden="true"></i> Hover or focus a card to pause the showcase</p>
+        </section>
+
+        <div class="projects__footer">
+          <p><span aria-hidden="true"></span> Have a good idea? Let's make it real.</p>
+          <a href="pages/contact.html">Let's talk about your project <i data-lucide="arrow-up-right" aria-hidden="true"></i></a>
+        </div>
+      </section>
+
+      <section class="services-overview" id="services" aria-labelledby="services-title">
+        <div class="services-overview__intro">
+          <div>
+            <p class="services-overview__eyebrow"><span aria-hidden="true"></span> Thoughtful from first sketch to final handoff</p>
+            <h2 class="services-overview__title" id="services-title">
+              Good ideas deserve
+              <span>good design.</span>
+            </h2>
+          </div>
+          <p class="services-overview__description">
+            Practical creative and technical support shaped around your goals, your audience, and the details that make a brand feel like yours.
+          </p>
+        </div>
+
+        <div class="services-overview__grid">
+          <article class="service-card">
+            <span class="service-card__preview" aria-hidden="true"><img src="assets/images/project-interface.svg" alt="" loading="lazy"></span>
+            <span class="service-card__icon"><i data-lucide="panels-top-left" aria-hidden="true"></i></span>
+            <span class="service-card__number">01 / DIGITAL</span>
+            <h3>UI/UX &amp; Web Design</h3>
+            <p>Responsive landing pages and websites with clear structure, considered visuals, and an easier path for people to take action.</p>
+            <ul aria-label="UI/UX and web design skills"><li>Wireframes</li><li>Responsive UI</li><li>Figma</li></ul>
+            <a href="pages/services.html#service-web-design">Explore service <i data-lucide="arrow-up-right" aria-hidden="true"></i></a>
+          </article>
+          <article class="service-card">
+            <span class="service-card__preview" aria-hidden="true"><img src="assets/images/mini-landing.svg" alt="" loading="lazy"></span>
+            <span class="service-card__icon service-card__icon--mint"><i data-lucide="blocks" aria-hidden="true"></i></span>
+            <span class="service-card__number">02 / WEB CARE</span>
+            <h3>WordPress Management</h3>
+            <p>Hands-on website updates and ongoing content management to keep your WordPress presence useful and up to date.</p>
+            <ul aria-label="WordPress management skills"><li>Content updates</li><li>Page management</li><li>Site upkeep</li></ul>
+            <a href="pages/services.html#service-wordpress">Explore service <i data-lucide="arrow-up-right" aria-hidden="true"></i></a>
+          </article>
+          <article class="service-card">
+            <span class="service-card__preview" aria-hidden="true"><img src="assets/images/mini-email.svg" alt="" loading="lazy"></span>
+            <span class="service-card__icon service-card__icon--violet"><i data-lucide="mail" aria-hidden="true"></i></span>
+            <span class="service-card__number">03 / CAMPAIGNS</span>
+            <h3>Email Marketing</h3>
+            <p>Branded email campaigns that make the message easy to scan, the content feel consistent, and the next step clear.</p>
+            <ul aria-label="Email marketing skills"><li>Mailchimp</li><li>Email layout</li><li>Campaign content</li></ul>
+            <a href="pages/services.html#service-email">Explore service <i data-lucide="arrow-up-right" aria-hidden="true"></i></a>
+          </article>
+          <article class="service-card">
+            <span class="service-card__preview" aria-hidden="true"><img src="assets/images/project-campaign.svg" alt="" loading="lazy"></span>
+            <span class="service-card__icon service-card__icon--violet"><i data-lucide="panels-top-left" aria-hidden="true"></i></span>
+            <span class="service-card__number">04 / BRAND</span>
+            <h3>Brand &amp; Marketing Collateral</h3>
+            <p>Coordinated visual materials—from digital graphics to polished brochures—that help your communication feel cohesive.</p>
+            <ul aria-label="Brand and marketing collateral skills"><li>Brand assets</li><li>Brochures</li><li>Social graphics</li></ul>
+            <a href="pages/services.html#service-collateral">Explore service <i data-lucide="arrow-up-right" aria-hidden="true"></i></a>
+          </article>
+          <article class="service-card">
+            <span class="service-card__preview" aria-hidden="true"><img src="assets/images/mini-icons.svg" alt="" loading="lazy"></span>
+            <span class="service-card__icon"><i data-lucide="component" aria-hidden="true"></i></span>
+            <span class="service-card__number">05 / HANDOFF</span>
+            <h3>UI Components &amp; Design Assets</h3>
+            <p>Organized reusable interface pieces and practical design assets that help a project stay consistent from mockup to build.</p>
+            <ul aria-label="Design asset skills"><li>Figma components</li><li>UI patterns</li><li>Dev handoff</li></ul>
+            <a href="pages/services.html#service-handoff">Explore service <i data-lucide="arrow-up-right" aria-hidden="true"></i></a>
+          </article>
+          <article class="service-card">
+            <span class="service-card__preview" aria-hidden="true"><img src="assets/images/mini-mobile.svg" alt="" loading="lazy"></span>
+            <span class="service-card__icon service-card__icon--mint"><i data-lucide="settings-2" aria-hidden="true"></i></span>
+            <span class="service-card__number">06 / TECH SUPPORT</span>
+            <h3>Practical IT Support</h3>
+            <p>Patient help with everyday computer setup and troubleshooting, informed by hands-on technical support experience.</p>
+            <ul aria-label="IT support skills"><li>PC setup</li><li>Troubleshooting</li><li>System updates</li></ul>
+            <a href="pages/services.html#service-it-support">Explore service <i data-lucide="arrow-up-right" aria-hidden="true"></i></a>
+          </article>
+        </div>
+
+        <div class="services-overview__footer">
+          <p><span aria-hidden="true"></span> Not sure which service fits? Tell me what you’re working on.</p>
+          <a href="pages/contact.html">Start a conversation <i data-lucide="arrow-up-right" aria-hidden="true"></i></a>
+        </div>
+      </section>
+
+      <section class="technologies" id="technologies" aria-labelledby="technologies-title">
+        <div class="technologies__heading">
+          <p class="technologies__eyebrow">Tools section</p>
+          <h2 class="technologies__title" id="technologies-title">Tools &amp; Software</h2>
+        </div>
+        <p class="technologies__subtitle">Here are the tools and software I use</p>
+
+        <ul class="technologies__grid" aria-label="Technologies and tools" tabindex="0">
+          <li class="technology-card">
+            <span class="technology-card__tile"><img src="assets/images/html5-logo.svg" alt="" width="48" height="54" loading="lazy"></span>
+            <span class="technology-card__name">HTML</span>
+          </li>
+          <li class="technology-card">
+            <span class="technology-card__tile"><img src="assets/images/technology-placeholder.svg" alt="" width="54" height="54" loading="lazy"></span>
+            <span class="technology-card__name">CSS</span>
+          </li>
+          <li class="technology-card">
+            <span class="technology-card__tile"><img src="assets/images/technology-placeholder.svg" alt="" width="54" height="54" loading="lazy"></span>
+            <span class="technology-card__name">XML</span>
+          </li>
+          <li class="technology-card">
+            <span class="technology-card__tile"><img src="assets/images/technology-placeholder.svg" alt="" width="54" height="54" loading="lazy"></span>
+            <span class="technology-card__name">JavaScript</span>
+          </li>
+          <li class="technology-card">
+            <span class="technology-card__tile"><img src="assets/images/technology-placeholder.svg" alt="" width="54" height="54" loading="lazy"></span>
+            <span class="technology-card__name">GitHub</span>
+          </li>
+          <li class="technology-card">
+            <span class="technology-card__tile"><img src="assets/images/technology-placeholder.svg" alt="" width="54" height="54" loading="lazy"></span>
+            <span class="technology-card__name">Git</span>
+          </li>
+          <li class="technology-card">
+            <span class="technology-card__tile"><img src="assets/images/technology-placeholder.svg" alt="" width="54" height="54" loading="lazy"></span>
+            <span class="technology-card__name">Figma</span>
+          </li>
+          <li class="technology-card">
+            <span class="technology-card__tile"><img src="assets/images/technology-placeholder.svg" alt="" width="54" height="54" loading="lazy"></span>
+            <span class="technology-card__name">Canva / Canva Pro</span>
+          </li>
+          <li class="technology-card">
+            <span class="technology-card__tile"><img src="assets/images/technology-placeholder.svg" alt="" width="54" height="54" loading="lazy"></span>
+            <span class="technology-card__name">WordPress</span>
+          </li>
+          <li class="technology-card">
+            <span class="technology-card__tile"><img src="assets/images/technology-placeholder.svg" alt="" width="54" height="54" loading="lazy"></span>
+            <span class="technology-card__name">VS Code</span>
+          </li>
+          <li class="technology-card">
+            <span class="technology-card__tile"><img src="assets/images/technology-placeholder.svg" alt="" width="54" height="54" loading="lazy"></span>
+            <span class="technology-card__name">Mailchimp</span>
+          </li>
+          <li class="technology-card">
+            <span class="technology-card__tile"><img src="assets/images/technology-placeholder.svg" alt="" width="54" height="54" loading="lazy"></span>
+            <span class="technology-card__name">Bootstrap</span>
+          </li>
+          <li class="technology-card">
+            <span class="technology-card__tile"><img src="assets/images/technology-placeholder.svg" alt="" width="54" height="54" loading="lazy"></span>
+            <span class="technology-card__name">Tailwind CSS</span>
+          </li>
+          <li class="technology-card">
+            <span class="technology-card__tile"><img src="assets/images/technology-placeholder.svg" alt="" width="54" height="54" loading="lazy"></span>
+            <span class="technology-card__name">Email Framer</span>
+          </li>
+          <li class="technology-card">
+            <span class="technology-card__tile"><img src="assets/images/technology-placeholder.svg" alt="" width="54" height="54" loading="lazy"></span>
+            <span class="technology-card__name">Microsoft 365</span>
+          </li>
+        </ul>
+      </section>
+
+      <section class="what-edris" id="what-edris" aria-labelledby="what-edris-title">
+        <div class="what-edris__hero">
+          <div class="what-edris__copy">
+            <p class="what-edris__eyebrow"><span aria-hidden="true"></span> From first sketch to final handoff</p>
+            <h2 class="what-edris__title" id="what-edris-title">What Edris <span>does.</span></h2>
+            <p class="what-edris__description">
+              I bring creative ideas to life with thoughtful design, practical web solutions, and a process that keeps your goals at the center.
+            </p>
+            <a class="what-edris__contact" href="pages/contact.html">
+              Have a project in mind? Let’s talk <i data-lucide="arrow-up-right" aria-hidden="true"></i>
+            </a>
+          </div>
+
+          <div class="what-edris__visual" aria-label="Edris seated in a black suit">
+            <span class="what-edris__visual-glow" aria-hidden="true"></span>
+            <img
+              class="what-edris__portrait"
+              src="assets/images/edris-sitting-cutout.png"
+              alt="Edris sitting in a black suit"
+              width="235"
+              height="340"
+              loading="lazy"
+            >
+          </div>
+        </div>
+
+        <ol class="what-edris__steps" aria-label="My creative process">
+          <li class="what-edris__step">
+            <span class="what-edris__step-number">01</span>
+            <h3>Research &amp; discovery</h3>
+            <p>Getting to know your goals, audience, and the problem we’re solving.</p>
+          </li>
+          <li class="what-edris__step">
+            <span class="what-edris__step-number">02</span>
+            <h3>Plan the direction</h3>
+            <p>Organizing content and shaping a clear path from idea to experience.</p>
+          </li>
+          <li class="what-edris__step">
+            <span class="what-edris__step-number">03</span>
+            <h3>Design with purpose</h3>
+            <p>Creating visuals and interfaces that feel polished, clear, and on-brand.</p>
+          </li>
+          <li class="what-edris__step">
+            <span class="what-edris__step-number">04</span>
+            <h3>Build &amp; refine</h3>
+            <p>Bringing the design to life and refining the details across screen sizes.</p>
+          </li>
+          <li class="what-edris__step">
+            <span class="what-edris__step-number">05</span>
+            <h3>Deliver &amp; support</h3>
+            <p>Handing over thoughtful work and helping you feel confident using it.</p>
+          </li>
+        </ol>
+      </section>
+    </div>
+  </main>
+
+  <dialog class="project-preview" id="project-preview" aria-labelledby="project-preview-title">
+    <div class="project-preview__content">
+      <button class="project-preview__close" type="button" aria-label="Close project preview">
+        <i data-lucide="x" aria-hidden="true"></i>
+      </button>
+      <div class="project-preview__visual">
+        <img src="assets/images/project-identity.svg" alt="" width="1000" height="720">
+      </div>
+      <div class="project-preview__copy">
+        <p class="project-preview__eyebrow"><span aria-hidden="true"></span> Interactive concept preview</p>
+        <h2 id="project-preview-title">A personal identity with character.</h2>
+        <p class="project-preview__description"></p>
+        <ul class="project-preview__tags" aria-label="Project disciplines"></ul>
+        <a class="project-preview__contact" href="pages/contact.html">
+          Have a project in mind? Let's talk <i data-lucide="arrow-up-right" aria-hidden="true"></i>
+        </a>
+      </div>
+    </div>
+  </dialog>
+
+  <button class="back-to-top" type="button" aria-label="Back to top">
+    <i data-lucide="arrow-up" aria-hidden="true"></i>
+  </button>
+
+  <script src="https://unpkg.com/lucide@latest"></script>
+  <script src="script/main.js"></script>
+  <script src="script/navbar.js"></script>
+  <script src="script/clock.js"></script>
+  <script src="script/scroll.js"></script>
+  <script src="script/projects.js"></script>
+  <script src="script/spider-family.js"></script>
+</body>
+</html>

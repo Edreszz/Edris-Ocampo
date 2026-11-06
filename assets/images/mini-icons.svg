@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="480" height="320" viewBox="0 0 480 320" fill="none">
+  <defs><linearGradient id="a" x1="26" y1="12" x2="451" y2="309" gradientUnits="userSpaceOnUse"><stop stop-color="#34394F"/><stop offset="1" stop-color="#222531"/></linearGradient></defs>
+  <path fill="url(#a)" d="M0 0h480v320H0z"/><circle cx="415" cy="34" r="100" fill="#8B9CF5" fill-opacity=".12"/>
+  <rect x="80" y="45" width="320" height="230" rx="18" fill="#F4F5FA"/><text x="105" y="82" fill="#252734" font-family="Arial,sans-serif" font-size="15" font-weight="700">Little things, clearly.</text>
+  <text x="105" y="102" fill="#858BA0" font-family="Arial,sans-serif" font-size="9">A friendly icon set for everyday moments</text>
+  <rect x="105" y="123" width="72" height="62" rx="13" fill="#E3E7FC"/><rect x="192" y="123" width="72" height="62" rx="13" fill="#DDF0EC"/><rect x="279" y="123" width="72" height="62" rx="13" fill="#F6E8D8"/>
+  <circle cx="141" cy="151" r="15" stroke="#6879DC" stroke-width="4"/><path d="m134 151 5 5 10-12" stroke="#6879DC" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M209 151h38M228 132v38" stroke="#4F9F92" stroke-width="4" stroke-linecap="round"/>
+  <path d="M301 159c0-11 8-20 18-20s18 9 18 20v9h-36v-9Z" fill="#D19C62"/><circle cx="319" cy="133" r="8" fill="#D19C62"/>
+  <text x="120" y="208" fill="#555B6E" font-family="Arial,sans-serif" font-size="8" font-weight="700">DONE</text><text x="208" y="208" fill="#555B6E" font-family="Arial,sans-serif" font-size="8" font-weight="700">ADD</text><text x="293" y="208" fill="#555B6E" font-family="Arial,sans-serif" font-size="8" font-weight="700">PROFILE</text>
+  <rect x="105" y="226" width="126" height="7" rx="3.5" fill="#D6D9E1"/><rect x="105" y="241" width="96" height="7" rx="3.5" fill="#E3E5EB"/>
+</svg>

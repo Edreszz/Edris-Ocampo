@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="480" height="320" viewBox="0 0 480 320" fill="none">
+  <defs><linearGradient id="a" x1="20" y1="6" x2="464" y2="314" gradientUnits="userSpaceOnUse"><stop stop-color="#263D49"/><stop offset="1" stop-color="#242634"/></linearGradient><linearGradient id="b" x1="117" y1="58" x2="365" y2="261" gradientUnits="userSpaceOnUse"><stop stop-color="#AAB5FF"/><stop offset="1" stop-color="#70C1B3"/></linearGradient></defs>
+  <path fill="url(#a)" d="M0 0h480v320H0z"/><circle cx="429" cy="268" r="107" fill="#A78BFA" fill-opacity=".13"/>
+  <rect x="82" y="30" width="316" height="262" rx="16" fill="#171923" fill-opacity=".4"/><rect x="73" y="22" width="316" height="262" rx="16" fill="#F4F5FA"/>
+  <rect x="73" y="22" width="316" height="36" rx="16" fill="#E6E8EF"/><path d="M73 42h316v16H73z" fill="#E6E8EF"/>
+  <circle cx="92" cy="40" r="4" fill="#F07D7D"/><circle cx="106" cy="40" r="4" fill="#F2C46C"/><circle cx="120" cy="40" r="4" fill="#70C1B3"/>
+  <rect x="94" y="77" width="274" height="93" rx="12" fill="url(#b)"/><text x="115" y="105" fill="#34394F" font-family="Arial,sans-serif" font-size="8" font-weight="700" letter-spacing="1.5">A NOTE FROM THE STUDIO</text>
+  <text x="115" y="135" fill="#252734" font-family="Arial,sans-serif" font-size="22" font-weight="700">Good ideas</text><text x="115" y="157" fill="#252734" font-family="Arial,sans-serif" font-size="22" font-weight="700">start here.</text>
+  <text x="95" y="193" fill="#555B6E" font-family="Arial,sans-serif" font-size="10">A little inspiration, delivered with intention.</text>
+  <rect x="95" y="209" width="124" height="27" rx="13.5" fill="#34394F"/><text x="115" y="227" fill="#F4F5FA" font-family="Arial,sans-serif" font-size="8" font-weight="700">GET THE GOOD STUFF</text>
+  <text x="95" y="257" fill="#858BA0" font-family="Arial,sans-serif" font-size="8">Thoughtful design, straight to your inbox.</text>
+</svg>

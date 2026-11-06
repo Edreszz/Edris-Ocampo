@@ -1,0 +1,51 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="720" viewBox="0 0 1000 720" fill="none">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1000" y2="720" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#34394F"/>
+      <stop offset="1" stop-color="#1D202C"/>
+    </linearGradient>
+    <linearGradient id="card" x1="195" y1="118" x2="694" y2="657" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#A9B5FF"/>
+      <stop offset="1" stop-color="#777EE2"/>
+    </linearGradient>
+    <filter id="shadow" x="125" y="61" width="764" height="655" color-interpolation-filters="sRGB" filterUnits="userSpaceOnUse">
+      <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+      <feColorMatrix in="SourceAlpha" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+      <feOffset dy="16"/>
+      <feGaussianBlur stdDeviation="18"/>
+      <feComposite in2="hardAlpha" operator="out"/>
+      <feColorMatrix values="0 0 0 0 0.04 0 0 0 0 0.05 0 0 0 0 0.1 0 0 0 0.4 0"/>
+      <feBlend in2="BackgroundImageFix" result="effect1_dropShadow"/>
+      <feBlend in="SourceGraphic" in2="effect1_dropShadow" result="shape"/>
+    </filter>
+  </defs>
+  <path fill="url(#bg)" d="M0 0h1000v720H0z"/>
+  <circle cx="839" cy="118" r="205" fill="#8B9CF5" fill-opacity=".09"/>
+  <circle cx="126" cy="639" r="190" fill="#70C1B3" fill-opacity=".08"/>
+  <g filter="url(#shadow)">
+    <rect x="177" y="111" width="646" height="472" rx="26" fill="#F4F2EF"/>
+    <rect x="177" y="111" width="646" height="45" rx="26" fill="#E8E7EC"/>
+    <path d="M177 137h646v19H177z" fill="#E8E7EC"/>
+    <circle cx="205" cy="134" r="5" fill="#F07D7D"/>
+    <circle cx="224" cy="134" r="5" fill="#F2C46C"/>
+    <circle cx="243" cy="134" r="5" fill="#70C1B3"/>
+    <rect x="200" y="185" width="600" height="375" rx="14" fill="url(#card)"/>
+    <path d="M201 472c124-72 211-115 340-113 96 1 173 35 259 108v79H201v-74Z" fill="#252734" fill-opacity=".14"/>
+    <rect x="234" y="220" width="100" height="100" rx="30" fill="#252734"/>
+    <text x="265" y="294" fill="#AEB9FF" font-family="Arial,sans-serif" font-size="68" font-weight="700">E</text>
+    <text x="234" y="365" fill="#252734" font-family="Arial,sans-serif" font-size="17" font-weight="700" letter-spacing="3">EDRIS OCAMPO</text>
+    <text x="234" y="412" fill="#252734" font-family="Arial,sans-serif" font-size="36" font-weight="700" letter-spacing="-1.5">MAKE IT</text>
+    <text x="234" y="450" fill="#252734" font-family="Arial,sans-serif" font-size="36" font-weight="700" letter-spacing="-1.5">MEAN SOMETHING.</text>
+    <rect x="234" y="477" width="146" height="38" rx="19" fill="#252734"/>
+    <text x="258" y="501" fill="#F4F5FA" font-family="Arial,sans-serif" font-size="12" font-weight="700" letter-spacing="1">SEE THE WORK</text>
+    <circle cx="718" cy="270" r="46" fill="#F0BE80"/>
+    <circle cx="694" cy="251" r="9" fill="#F4F2EF" fill-opacity=".58"/>
+    <path d="M697 342c12-33 42-49 70-41 22 6 36 27 37 53l-3 115H678l1-83c1-18 7-33 18-44Z" fill="#34394F"/>
+    <path d="M687 472h114v54H687z" fill="#70C1B3"/>
+    <text x="701" y="506" fill="#252734" font-family="Arial,sans-serif" font-size="12" font-weight="700" letter-spacing="1">THOUGHTFUL</text>
+    <text x="702" y="524" fill="#252734" font-family="Arial,sans-serif" font-size="12" font-weight="700" letter-spacing="1">BY DESIGN</text>
+  </g>
+  <rect x="740" y="588" width="137" height="58" rx="18" fill="#70C1B3"/>
+  <text x="766" y="624" fill="#20232F" font-family="Arial,sans-serif" font-size="13" font-weight="700" letter-spacing="1">BRAND KIT ↗</text>
+  <text x="88" y="642" fill="#B5B9C9" font-family="Arial,sans-serif" font-size="13" font-weight="700" letter-spacing="3">01 — IDENTITY IN EVERY DETAIL</text>
+</svg>

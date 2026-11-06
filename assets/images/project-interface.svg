@@ -1,0 +1,47 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="720" viewBox="0 0 1000 720" fill="none">
+  <defs>
+    <linearGradient id="bg" x1="59" y1="32" x2="943" y2="699" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#263D49"/>
+      <stop offset="1" stop-color="#1B202C"/>
+    </linearGradient>
+    <linearGradient id="hero" x1="358" y1="179" x2="853" y2="467" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#A9B5FF"/>
+      <stop offset="1" stop-color="#70C1B3"/>
+    </linearGradient>
+  </defs>
+  <path fill="url(#bg)" d="M0 0h1000v720H0z"/>
+  <circle cx="158" cy="106" r="160" fill="#70C1B3" fill-opacity=".09"/>
+  <circle cx="908" cy="662" r="240" fill="#8B9CF5" fill-opacity=".1"/>
+  <rect x="111" y="79" width="778" height="561" rx="24" fill="#F4F5FA"/>
+  <rect x="111" y="79" width="778" height="48" rx="24" fill="#E7EAF2"/>
+  <path d="M111 104h778v23H111z" fill="#E7EAF2"/>
+  <circle cx="142" cy="103" r="6" fill="#F07D7D"/>
+  <circle cx="162" cy="103" r="6" fill="#F2C46C"/>
+  <circle cx="182" cy="103" r="6" fill="#70C1B3"/>
+  <rect x="137" y="146" width="726" height="47" rx="12" fill="#fff"/>
+  <rect x="158" y="162" width="102" height="13" rx="6.5" fill="#34394F"/>
+  <circle cx="743" cy="169" r="8" fill="#D9DDF0"/>
+  <circle cx="773" cy="169" r="8" fill="#D9DDF0"/>
+  <rect x="795" y="155" width="51" height="27" rx="13.5" fill="#34394F"/>
+  <text x="147" y="231" fill="#7582D8" font-family="Arial,sans-serif" font-size="10" font-weight="700" letter-spacing="2">DESIGN THAT FEELS LIKE YOU</text>
+  <text x="147" y="272" fill="#252734" font-family="Arial,sans-serif" font-size="34" font-weight="700" letter-spacing="-1">A portfolio with</text>
+  <text x="147" y="310" fill="#7582D8" font-family="Arial,sans-serif" font-size="34" font-weight="700" letter-spacing="-1">room to breathe.</text>
+  <text x="147" y="339" fill="#73798B" font-family="Arial,sans-serif" font-size="12">Clear stories. Useful details. A little personality.</text>
+  <rect x="147" y="359" width="119" height="35" rx="17.5" fill="#34394F"/>
+  <text x="167" y="381" fill="#fff" font-family="Arial,sans-serif" font-size="10" font-weight="700">EXPLORE WORK ↗</text>
+  <rect x="541" y="213" width="285" height="195" rx="19" fill="url(#hero)"/>
+  <circle cx="735" cy="260" r="41" fill="#F0BE80"/>
+  <path d="M663 349c6-40 29-62 70-62 39 0 64 24 70 62v31H663v-31Z" fill="#323747"/>
+  <rect x="681" y="382" width="178" height="8" rx="4" fill="#A6AAB9" fill-opacity=".5"/>
+  <text x="147" y="447" fill="#252734" font-family="Arial,sans-serif" font-size="17" font-weight="700">Selected work</text>
+  <rect x="147" y="465" width="211" height="127" rx="13" fill="#DDE1F7"/>
+  <rect x="368" y="465" width="211" height="127" rx="13" fill="#D5EBE7"/>
+  <rect x="589" y="465" width="237" height="127" rx="13" fill="#F1E3D4"/>
+  <rect x="161" y="479" width="183" height="80" rx="8" fill="#9BA8F3"/>
+  <rect x="382" y="479" width="183" height="80" rx="8" fill="#77B9AD"/>
+  <rect x="603" y="479" width="209" height="80" rx="8" fill="#D9AE7E"/>
+  <text x="161" y="579" fill="#34394F" font-family="Arial,sans-serif" font-size="10" font-weight="700">IDENTITY SYSTEM</text>
+  <text x="382" y="579" fill="#34394F" font-family="Arial,sans-serif" font-size="10" font-weight="700">DIGITAL EXPERIENCE</text>
+  <text x="603" y="579" fill="#34394F" font-family="Arial,sans-serif" font-size="10" font-weight="700">CAMPAIGN CONCEPT</text>
+  <text x="87" y="682" fill="#B5B9C9" font-family="Arial,sans-serif" font-size="13" font-weight="700" letter-spacing="3">02 — BUILT FOR EVERY SCREEN</text>
+</svg>
