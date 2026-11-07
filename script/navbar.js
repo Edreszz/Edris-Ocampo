@@ -14,6 +14,8 @@ document.addEventListener("DOMContentLoaded", function () {
       ? "technologies"
       : currentPath.endsWith("/about.html")
         ? "about"
+        : currentPath.endsWith("/certifications.html")
+          ? "certifications"
         : currentPath.endsWith("/contact.html")
           ? "contact"
         : currentPath.endsWith("/blogs.html")

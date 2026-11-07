@@ -4,8 +4,8 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="theme-color" content="#252734">
-  <meta name="description" content="About portfolio page.">
-  <title>About | Personal Portfolio</title>
+  <meta name="description" content="Meet Edris Ocampo, a Graphic and UI/UX Designer focused on clear, user-friendly digital experiences and web design.">
+  <title>About Edris Ocampo | Graphic &amp; UI/UX Designer</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
@@ -13,6 +13,7 @@
   <link rel="stylesheet" href="../style/main.css">
   <link rel="stylesheet" href="../style/navbar.css">
   <link rel="stylesheet" href="../style/responsive.css">
+  <link rel="stylesheet" href="../style/about.css">
   <script src="../script/theme.js"></script>
 </head>
 <body>
@@ -38,7 +39,7 @@
             <ul>
               <li><a class="navbar__dropdown-item" href="about.html">About</a></li>
               <li><a class="navbar__dropdown-item" href="technologies.html#experience">Experience</a></li>
-              <li><span class="navbar__dropdown-item">Certifications</span></li>
+              <li><a class="navbar__dropdown-item" data-page="certifications" href="certifications.html">Certifications</a></li>
             </ul>
           </div>
         </li>
@@ -70,13 +71,136 @@
       </div>
     </nav>
   </header>
-  <main class="page-content" id="main-content"><div class="content-container" aria-label="Main content"></div></main>
+  <main class="page-content about-page" id="main-content">
+    <div class="content-container">
+      <section class="about-hero" aria-labelledby="about-title">
+        <div class="about-hero__copy">
+          <p class="about-eyebrow"><span aria-hidden="true"></span> A little about me</p>
+          <p class="about-hero__role">Graphic &amp; UI/UX Designer</p>
+          <h1 class="about-hero__title" id="about-title">I design digital experiences that feel <span>clear, useful, and considered.</span></h1>
+          <p class="about-hero__intro">I’m Edris, a designer focused on UI/UX and web design. I bring visual creativity and practical technical skills together to make websites and digital content easier to understand and use.</p>
+          <p class="about-hero__detail">My experience spans freelance web and UI design, marketing collateral, WordPress and email support, and hands-on technical support. I care about how a design looks, how it works, and how smoothly it can be handed off.</p>
+          <div class="about-hero__actions">
+            <a class="about-button about-button--primary" href="../Edris CV 2026 Update.pdf" download="Edris-Ocampo-CV-2026.pdf">Download my CV <i data-lucide="download" aria-hidden="true"></i></a>
+            <a class="about-button about-button--secondary" href="../index.html#projects">Explore my work <i data-lucide="arrow-up-right" aria-hidden="true"></i></a>
+          </div>
+        </div>
+        <figure class="about-portrait">
+          <div class="about-portrait__glow" aria-hidden="true"></div>
+          <img src="../assets/images/edris-leaning.png" alt="Edris Ocampo, Graphic and UI/UX Designer" width="386" height="594">
+          <figcaption><span class="about-portrait__status" aria-hidden="true"></span> Open to design opportunities</figcaption>
+        </figure>
+      </section>
+
+      <section class="about-background" aria-labelledby="about-background-title">
+        <div class="about-section-heading">
+          <p class="about-eyebrow">A multidisciplinary background</p>
+          <h2 id="about-background-title">Design is my focus.<br><span>Curiosity broadens my toolkit.</span></h2>
+        </div>
+        <div class="about-background__content">
+          <p>I hold a Bachelor of Science in Information Technology from Pampanga State University. My background gives me an appreciation for both the visual and practical sides of digital work—from shaping an interface to understanding the tools and systems behind it.</p>
+          <p>I’m looking for opportunities to contribute as a designer, learn from a team, and create thoughtful work that serves real people and business goals.</p>
+          <a class="about-text-link" href="technologies.html#experience">View my experience and education <i data-lucide="arrow-up-right" aria-hidden="true"></i></a>
+        </div>
+      </section>
+
+      <section class="about-strengths" aria-label="Areas I bring together">
+        <article class="about-strength">
+          <span class="about-strength__number">01</span>
+          <h3>UI &amp; web design</h3>
+          <p>Responsive layouts, thoughtful interfaces, and clear visual hierarchy.</p>
+        </article>
+        <article class="about-strength">
+          <span class="about-strength__number">02</span>
+          <h3>Marketing &amp; content</h3>
+          <p>Brand and marketing collateral, plus practical website and email support.</p>
+        </article>
+        <article class="about-strength">
+          <span class="about-strength__number">03</span>
+          <h3>Technical foundation</h3>
+          <p>An IT education and support experience that help me consider the details behind the design.</p>
+        </article>
+      </section>
+
+      <section class="about-journey" aria-labelledby="about-journey-title">
+        <div class="about-section-heading">
+          <p class="about-eyebrow">Experience &amp; education</p>
+          <h2 id="about-journey-title">A practical foundation<br><span>for thoughtful design.</span></h2>
+        </div>
+        <div class="about-journey__list">
+          <article class="about-journey__item">
+            <span class="about-journey__index">01</span>
+            <div>
+              <p class="about-journey__meta">FREELANCE · AUG–SEP 2026</p>
+              <h3>Marketing &amp; website support</h3>
+              <p>WordPress content, Mailchimp email marketing, and designed marketing collateral for a UK-based client.</p>
+            </div>
+          </article>
+          <article class="about-journey__item">
+            <span class="about-journey__index">02</span>
+            <div>
+              <p class="about-journey__meta">FREELANCE · JAN–JUN 2023</p>
+              <h3>Web &amp; UI design</h3>
+              <p>Responsive landing pages, high-fidelity mockups, UI components, and design handoff collaboration.</p>
+            </div>
+          </article>
+          <article class="about-journey__item">
+            <span class="about-journey__index">03</span>
+            <div>
+              <p class="about-journey__meta">REGASCO LPGMA · JUL–DEC 2021</p>
+              <h3>Technical support</h3>
+              <p>Hardware and operating system maintenance, CCTV monitoring, troubleshooting, and routine updates.</p>
+            </div>
+          </article>
+          <article class="about-journey__item about-journey__item--education">
+            <span class="about-journey__index"><i data-lucide="graduation-cap" aria-hidden="true"></i></span>
+            <div>
+              <p class="about-journey__meta">EDUCATION · 2021–2025</p>
+              <h3>Bachelor of Science in Information Technology</h3>
+              <p>Pampanga State University</p>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="about-approach" aria-labelledby="about-approach-title">
+        <div class="about-approach__heading">
+          <p class="about-eyebrow">How I approach the work</p>
+          <h2 id="about-approach-title">Good design is a process, <span>not a shortcut.</span></h2>
+        </div>
+        <div class="about-approach__steps">
+          <article>
+            <span>01 / UNDERSTAND</span>
+            <h3>Start with the goal</h3>
+            <p>Get clear on the audience, the need, and what the work should help accomplish.</p>
+          </article>
+          <article>
+            <span>02 / EXPLORE</span>
+            <h3>Make ideas tangible</h3>
+            <p>Shape direction, structure, and visual details into something people can respond to.</p>
+          </article>
+          <article>
+            <span>03 / REFINE</span>
+            <h3>Polish the details</h3>
+            <p>Improve clarity and consistency, then prepare a thoughtful handoff.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="about-contact" aria-labelledby="about-contact-title">
+        <div>
+          <p class="about-eyebrow">Have a role or project in mind?</p>
+          <h2 id="about-contact-title">Let’s make something thoughtful.</h2>
+        </div>
+        <a class="about-button about-button--primary" href="contact.html">Get in touch <i data-lucide="arrow-up-right" aria-hidden="true"></i></a>
+      </section>
+    </div>
+  </main>
   <button class="back-to-top" type="button" aria-label="Back to top"><i data-lucide="arrow-up" aria-hidden="true"></i></button>
   <script src="https://unpkg.com/lucide@latest"></script>
   <script src="../script/main.js"></script>
   <script src="../script/navbar.js"></script>
   <script src="../script/clock.js"></script>
   <script src="../script/scroll.js"></script>
-  <script src="../script/spider-family.js"></script>
 </body>
 </html>

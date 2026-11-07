@@ -1,4 +1,46 @@
 document.addEventListener("DOMContentLoaded", function () {
+  const reduceMotion = window.matchMedia(
+    "(prefers-reduced-motion: reduce)"
+  ).matches;
+  const revealTargets = document.querySelectorAll(
+    [
+      "main .content-container > header",
+      "main .content-container section",
+      "main .content-container article",
+      "main .content-container .collection-stage"
+    ].join(", ")
+  );
+
+  if (
+    !reduceMotion &&
+    "IntersectionObserver" in window &&
+    revealTargets.length
+  ) {
+    document.body.classList.add("has-scroll-reveal");
+    revealTargets.forEach(function (target) {
+      target.classList.add("scroll-reveal");
+    });
+
+    const revealObserver = new IntersectionObserver(
+      function (entries) {
+        entries.forEach(function (entry) {
+          entry.target.classList.toggle(
+            "is-scroll-visible",
+            entry.isIntersecting
+          );
+        });
+      },
+      {
+        rootMargin: "-10% 0px -10% 0px",
+        threshold: 0
+      }
+    );
+
+    revealTargets.forEach(function (target) {
+      revealObserver.observe(target);
+    });
+  }
+
   const progressBar = document.getElementById("scroll-progress");
   const backToTop = document.querySelector(".back-to-top");
   if (!progressBar || !backToTop) return;

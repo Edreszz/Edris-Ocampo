@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#252734">
+  <meta name="description" content="A space for Edris Ocampo's certifications and professional learning.">
+  <title>Certifications | Edris Ocampo</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../style/themes.css">
+  <link rel="stylesheet" href="../style/main.css">
+  <link rel="stylesheet" href="../style/navbar.css">
+  <link rel="stylesheet" href="../style/responsive.css">
+  <link rel="stylesheet" href="../style/work-pages.css">
+  <script src="../script/theme.js"></script>
+</head>
+<body class="collection-page collection-page--certifications">
+  <div class="scroll-progress" aria-hidden="true"><div class="scroll-progress__bar" id="scroll-progress"></div></div>
+  <header class="site-header">
+    <nav class="navbar" aria-label="Main navigation">
+      <div class="navbar__brand">
+        <a class="navbar__brand-name" href="../index.html">Edris Ocampo</a>
+        <span class="navbar__brand-divider" aria-hidden="true"></span>
+        <span class="navbar__brand-label">Personal Portfolio System</span>
+      </div>
+      <button class="navbar__menu-toggle" type="button" aria-label="Open navigation menu" aria-expanded="false" aria-controls="primary-navigation"><i class="navbar__menu-icon" data-lucide="menu" aria-hidden="true"></i><i class="navbar__close-icon" data-lucide="x" aria-hidden="true"></i></button>
+      <ul class="navbar__links" id="primary-navigation">
+        <li><a class="navbar__link" data-page="home" href="../index.html">Home</a></li>
+        <li><a class="navbar__link" data-page="services" href="services.html">Services</a></li>
+        <li><a class="navbar__link" data-page="technologies" href="technologies.html">Technologies</a></li>
+        <li class="navbar__dropdown">
+          <button class="navbar__link navbar__dropdown-toggle" type="button" data-page="about" aria-expanded="false" aria-controls="about-menu">About <i data-lucide="chevron-down" aria-hidden="true"></i></button>
+          <div class="navbar__dropdown-menu" id="about-menu">
+            <p class="navbar__dropdown-heading">Profile</p>
+            <ul>
+              <li><a class="navbar__dropdown-item" href="about.html">About</a></li>
+              <li><a class="navbar__dropdown-item" href="technologies.html#experience">Experience</a></li>
+              <li><a class="navbar__dropdown-item" data-page="certifications" href="certifications.html">Certifications</a></li>
+            </ul>
+          </div>
+        </li>
+        <li><a class="navbar__link" data-page="contact" href="contact.html">Contact</a></li>
+        <li class="navbar__dropdown">
+          <button class="navbar__link navbar__dropdown-toggle" type="button" aria-expanded="false" aria-controls="pages-menu">Pages <i data-lucide="chevron-down" aria-hidden="true"></i></button>
+          <div class="navbar__dropdown-menu" id="pages-menu">
+            <p class="navbar__dropdown-heading">Other</p>
+            <ul>
+              <li><a class="navbar__dropdown-item" data-page="blogs" href="blogs.html">Blogs</a></li>
+              <li><a class="navbar__dropdown-item" data-page="ecommerce" href="ecommerce.html">Ecommerce</a></li>
+              <li><a class="navbar__dropdown-item" data-page="websites" href="websites.html">Websites</a></li>
+              <li><a class="navbar__dropdown-item" data-page="other-projects" href="other-projects.html">Other Projects</a></li>
+            </ul>
+          </div>
+        </li>
+        <li class="navbar__cv-item"><a class="navbar__cv" href="../Edris CV 2026 Update.pdf" download="Edris-Ocampo-CV-2026.pdf" aria-label="Download Edris Ocampo's CV as a PDF"><i data-lucide="download" aria-hidden="true"></i><span>Download CV</span></a></li>
+      </ul>
+      <div class="navbar__controls">
+        <span class="navbar__clock" aria-label="Local time"><i data-lucide="clock-3" aria-hidden="true"></i><time id="local-clock">--:--:--</time></span>
+        <button class="icon-button theme-toggle" type="button" aria-label="Switch to light theme" aria-pressed="false"><i class="theme-toggle__moon" data-lucide="moon" aria-hidden="true"></i><i class="theme-toggle__sun" data-lucide="sun" aria-hidden="true"></i></button>
+      </div>
+    </nav>
+  </header>
+  <main class="page-content portfolio-collection portfolio-collection--blogs" id="main-content">
+    <div class="content-container">
+      <header class="collection-heading">
+        <p class="collection-heading__eyebrow">LEARNING &amp; DEVELOPMENT</p>
+        <h1>Certifications</h1>
+      </header>
+      <section class="collection-stage collection-stage--blogs" aria-label="Certification collection layout">
+        <div class="collection-panel collection-panel--blog-feature" role="group" aria-label="Featured certification space"></div>
+        <div class="collection-panel collection-panel--blog-side-top" role="group" aria-label="Certification space"></div>
+        <div class="collection-panel collection-panel--blog-side-bottom" role="group" aria-label="Professional learning space"></div>
+        <div class="collection-panel collection-panel--blog-wide" role="group" aria-label="Additional certifications space"></div>
+      </section>
+    </div>
+  </main>
+  <button class="back-to-top" type="button" aria-label="Back to top"><i data-lucide="arrow-up" aria-hidden="true"></i></button>
+  <script src="https://unpkg.com/lucide@latest"></script>
+  <script src="../script/main.js"></script>
+  <script src="../script/navbar.js"></script>
+  <script src="../script/clock.js"></script>
+  <script src="../script/scroll.js"></script>
+</body>
+</html>
