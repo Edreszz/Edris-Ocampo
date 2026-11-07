@@ -3253,6 +3253,8 @@ body::before {
 
 .project-card {
   position: relative;
+  display: flex;
+  flex-direction: column;
   min-width: 0;
   overflow: hidden;
   background: color-mix(in srgb, var(--surface-elevated) 78%, transparent);
@@ -3366,6 +3368,9 @@ body::before {
 }
 
 .project-card__body {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
   padding: 21px 21px 23px;
 }
 
@@ -3408,6 +3413,7 @@ body::before {
   flex-wrap: wrap;
   gap: 7px;
   margin: 0;
+  margin-bottom: 20px;
   padding: 15px 0 0;
   border-top: 1px solid color-mix(in srgb, var(--border-color) 75%, transparent);
   list-style: none;
@@ -3428,10 +3434,11 @@ body::before {
 .project-card__action {
   display: inline-flex;
   min-height: 43px;
+  align-self: flex-start;
   align-items: center;
   justify-content: center;
   gap: 9px;
-  margin-top: 20px;
+  margin-top: auto;
   padding: 0 15px;
   color: #171923;
   background: var(--accent-primary);
@@ -3442,6 +3449,7 @@ body::before {
   font: inherit;
   font-size: 0.8rem;
   font-weight: 700;
+  text-decoration: none;
   transition:
     color 200ms ease,
     background-color 200ms ease,
