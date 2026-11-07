@@ -2,7 +2,7 @@
   position: sticky;
   z-index: 15;
   top: 16px;
-  width: min(96%, 1400px);
+  width: min(100%, 1500px);
   margin: 0 auto;
 }
 
@@ -260,6 +260,10 @@
   width: 16px;
   height: 16px;
   color: var(--text-muted);
+}
+
+.navbar__clock-label-compact {
+  display: none;
 }
 
 .icon-button,

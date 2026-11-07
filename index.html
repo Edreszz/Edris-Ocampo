@@ -51,7 +51,7 @@
             <p class="navbar__dropdown-heading">Profile</p>
             <ul>
               <li><a class="navbar__dropdown-item" href="pages/about.html">About</a></li>
-              <li><a class="navbar__dropdown-item" href="pages/technologies.html#experience">Experience</a></li>
+              <li><a class="navbar__dropdown-item" href="pages/about.html#about-journey">Experience &amp; education</a></li>
               <li><a class="navbar__dropdown-item" data-page="certifications" href="pages/certifications.html">Certifications</a></li>
             </ul>
           </div>
@@ -59,10 +59,10 @@
         
         <li class="navbar__dropdown">
           <button class="navbar__link navbar__dropdown-toggle" type="button" aria-expanded="false" aria-controls="pages-menu">
-            Pages <i data-lucide="chevron-down" aria-hidden="true"></i>
+            Explore <i data-lucide="chevron-down" aria-hidden="true"></i>
           </button>
           <div class="navbar__dropdown-menu" id="pages-menu">
-            <p class="navbar__dropdown-heading">Other</p>
+            <p class="navbar__dropdown-heading">Explore more</p>
             <ul>
               <li><a class="navbar__dropdown-item" data-page="blogs" href="pages/blogs.html">Blogs</a></li>
               <li><a class="navbar__dropdown-item" data-page="ecommerce" href="pages/ecommerce.html">Ecommerce</a></li>
@@ -80,8 +80,12 @@
         </li>
       </ul>
       <div class="navbar__controls">
-        <span class="navbar__clock" aria-label="Local time">
+        <span class="navbar__clock" aria-label="Local time in the Philippines (UTC+8)">
           <i data-lucide="clock-3" aria-hidden="true"></i>
+          <span class="navbar__clock-label">
+            <span class="navbar__clock-label-full">Local time (PH, UTC+8)</span>
+            <span class="navbar__clock-label-compact">PH · UTC+8</span>
+          </span>
           <time id="local-clock">--:--:--</time>
         </span>
         <button class="icon-button theme-toggle" type="button" aria-label="Switch to light theme" aria-pressed="false">

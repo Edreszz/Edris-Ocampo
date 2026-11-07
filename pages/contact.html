@@ -38,7 +38,7 @@
             <p class="navbar__dropdown-heading">Profile</p>
             <ul>
               <li><a class="navbar__dropdown-item" href="about.html">About</a></li>
-              <li><a class="navbar__dropdown-item" href="technologies.html#experience">Experience</a></li>
+              <li><a class="navbar__dropdown-item" href="about.html#about-journey">Experience &amp; education</a></li>
               <li><a class="navbar__dropdown-item" data-page="certifications" href="certifications.html">Certifications</a></li>
             </ul>
           </div>
@@ -46,10 +46,10 @@
         <li><a class="navbar__link" data-page="contact" href="contact.html">Contact</a></li>
         <li class="navbar__dropdown">
           <button class="navbar__link navbar__dropdown-toggle" type="button" aria-expanded="false" aria-controls="pages-menu">
-            Pages <i data-lucide="chevron-down" aria-hidden="true"></i>
+            Explore <i data-lucide="chevron-down" aria-hidden="true"></i>
           </button>
           <div class="navbar__dropdown-menu" id="pages-menu">
-            <p class="navbar__dropdown-heading">Other</p>
+            <p class="navbar__dropdown-heading">Explore more</p>
             <ul>
               <li><a class="navbar__dropdown-item" data-page="blogs" href="blogs.html">Blogs</a></li>
               <li><a class="navbar__dropdown-item" data-page="ecommerce" href="ecommerce.html">Ecommerce</a></li>
@@ -66,7 +66,7 @@
         </li>
       </ul>
       <div class="navbar__controls">
-        <span class="navbar__clock" aria-label="Local time"><i data-lucide="clock-3" aria-hidden="true"></i><time id="local-clock">--:--:--</time></span>
+        <span class="navbar__clock" aria-label="Local time in the Philippines (UTC+8)"><i data-lucide="clock-3" aria-hidden="true"></i><span>PH · UTC+8</span><time id="local-clock">--:--:--</time></span>
         <button class="icon-button theme-toggle" type="button" aria-label="Switch to light theme" aria-pressed="false"><i class="theme-toggle__moon" data-lucide="moon" aria-hidden="true"></i><i class="theme-toggle__sun" data-lucide="sun" aria-hidden="true"></i></button>
       </div>
     </nav>
@@ -78,7 +78,7 @@
           <p class="contact-intro__eyebrow"><span aria-hidden="true"></span> LET'S START A CONVERSATION</p>
           <h1 id="contact-title">Have an opportunity?<br><span>Let’s talk.</span></h1>
           <p class="contact-intro__description">
-            Share a few details about the role, project, or collaboration. I appreciate you thinking of me and will get back to you as soon as I can.
+            Based in the Philippines and available for work. Share a few details about the opportunity or collaboration; I aim to reply within 2 business days.
           </p>
           <a class="contact-intro__email" href="mailto:edrisocampo64@gmail.com">
             <span class="contact-intro__email-icon"><i data-lucide="mail" aria-hidden="true"></i></span>
@@ -87,8 +87,12 @@
           </a>
           <div class="contact-intro__note">
             <span class="contact-intro__note-dot" aria-hidden="true"></span>
-            <p>Every message is read personally. A little context helps me give you a thoughtful reply.</p>
+            <p>Every message is read personally. Your details are sent through Web3Forms to deliver your inquiry and are used to reply. Please don’t include sensitive information.</p>
           </div>
+          <nav class="contact-intro__profiles" aria-label="Professional profiles">
+            <a href="https://www.linkedin.com/in/edris-ocampo-b27512347/" target="_blank" rel="noopener noreferrer" aria-label="Connect with Edris Ocampo on LinkedIn"><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14ZM8.34 10H5.67v8h2.67v-8Zm7.67-.2c-1.42 0-2.37.78-2.76 1.53V10h-2.67v8h2.67v-4.1c0-1.08.2-2.13 1.55-2.13 1.33 0 1.35 1.24 1.35 2.2V18h2.67v-4.55c0-2.24-.48-3.65-2.81-3.65ZM7 6.1a1.55 1.55 0 1 0 0 3.1 1.55 1.55 0 0 0 0-3.1Z"/></svg><span>LinkedIn</span><i data-lucide="arrow-up-right" aria-hidden="true"></i></a>
+            <a href="https://github.com/Edreszz" target="_blank" rel="noopener noreferrer" aria-label="View Edris Ocampo on GitHub"><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M12 .9a11.1 11.1 0 0 0-3.5 21.6c.6.1.8-.2.8-.5v-2c-3.1.7-3.8-1.3-3.8-1.3-.5-1.3-1.2-1.6-1.2-1.6-1-.7.1-.7.1-.7 1.1.1 1.7 1.1 1.7 1.1 1 .1.7 2.2 3.2 1.6.1-.7.4-1.2.7-1.5-2.5-.3-5.1-1.2-5.1-5.5 0-1.2.4-2.1 1.1-2.9-.1-.3-.5-1.4.1-2.9 0 0 .9-.3 3 1.1a10.4 10.4 0 0 1 5.5 0c2.1-1.4 3-1.1 3-1.1.6 1.5.2 2.6.1 2.9.7.8 1.1 1.7 1.1 2.9 0 4.3-2.6 5.2-5.1 5.5.4.3.8 1 .8 2v3c0 .3.2.6.8.5A11.1 11.1 0 0 0 12 .9Z"/></svg><span>GitHub</span><i data-lucide="arrow-up-right" aria-hidden="true"></i></a>
+          </nav>
         </div>
 
         <form class="contact-form" id="contact-form" action="https://api.web3forms.com/submit" method="POST">
@@ -114,41 +118,7 @@
               <label for="contact-email">Email address <span aria-hidden="true">*</span></label>
               <input id="contact-email" name="email" type="email" autocomplete="email" placeholder="edrisocampo64@gmail.com" required maxlength="254">
             </div>
-            <div class="contact-field">
-              <label for="contact-company">Company or organization</label>
-              <input id="contact-company" name="Company" type="text" autocomplete="organization" placeholder="Where are you reaching out from?" maxlength="160">
-            </div>
-            <div class="contact-field">
-              <label for="contact-phone">Phone number <span class="contact-field__optional">(optional)</span></label>
-              <div class="contact-phone-input">
-                <select id="contact-country-code" name="Country calling code" autocomplete="tel-country-code" aria-label="Country calling code">
-                  <option value="+63" selected>PH +63</option>
-                  <option value="+1">US/CA +1</option>
-                  <option value="+44">UK +44</option>
-                  <option value="+61">AU +61</option>
-                  <option value="+64">NZ +64</option>
-                  <option value="+65">SG +65</option>
-                  <option value="+60">MY +60</option>
-                  <option value="+62">ID +62</option>
-                  <option value="+66">TH +66</option>
-                  <option value="+81">JP +81</option>
-                  <option value="+82">KR +82</option>
-                  <option value="+84">VN +84</option>
-                  <option value="+86">CN +86</option>
-                  <option value="+91">IN +91</option>
-                  <option value="+971">AE +971</option>
-                  <option value="+966">SA +966</option>
-                  <option value="+49">DE +49</option>
-                  <option value="+33">FR +33</option>
-                  <option value="+34">ES +34</option>
-                  <option value="+39">IT +39</option>
-                  <option value="+55">BR +55</option>
-                  <option value="+52">MX +52</option>
-                </select>
-                <input id="contact-phone" name="Phone" type="tel" autocomplete="tel-national" placeholder="9814712972" maxlength="20">
-              </div>
-            </div>
-            <div class="contact-field">
+            <div class="contact-field contact-field--full">
               <label for="contact-opportunity">What is this about? <span aria-hidden="true">*</span></label>
               <select id="contact-opportunity" name="Opportunity type" required>
                 <option value="" disabled selected>Select an opportunity</option>
@@ -159,20 +129,15 @@
               </select>
             </div>
             <div class="contact-field contact-field--full">
-              <label for="contact-role">Role, project, or subject <span aria-hidden="true">*</span></label>
-              <input id="contact-role" name="Role or project" type="text" placeholder="e.g. UI/UX Designer opportunity" required maxlength="180">
-            </div>
-            <div class="contact-field contact-field--full">
-              <label for="contact-link">Job post or portfolio/CV link <span class="contact-field__optional">(optional)</span></label>
-              <input id="contact-link" name="Reference link" type="url" inputmode="url" placeholder="https://">
-            </div>
-            <div class="contact-field contact-field--full">
               <label for="contact-message">Your message <span aria-hidden="true">*</span></label>
               <textarea id="contact-message" name="message" rows="5" placeholder="Share the details, timeline, and anything else that would be helpful..." required minlength="20" maxlength="5000"></textarea>
               <span class="contact-field__hint">Please include enough context for me to understand the opportunity.</span>
             </div>
           </div>
 
+          <div class="contact-form__captcha" aria-label="Spam protection">
+            <div class="h-captcha" data-captcha="true" data-size="compact"></div>
+          </div>
           <div class="contact-form__footer">
             <button class="contact-form__submit" type="submit">
               <span class="contact-form__submit-label">Send inquiry</span>
@@ -180,6 +145,7 @@
               <span class="contact-form__spinner" aria-hidden="true"></span>
             </button>
           </div>
+          <p class="contact-form__privacy">Spam protection is provided by hCaptcha and Web3Forms. Your inquiry is sent through Web3Forms to deliver it and is used to reply. Please don’t include sensitive personal information.</p>
           <p class="contact-form__status" id="contact-form-status" role="status" aria-live="polite"></p>
         </form>
       </section>
@@ -192,6 +158,7 @@
   <script src="../script/clock.js"></script>
   <script src="../script/scroll.js"></script>
   <script src="../script/spider-family.js"></script>
+  <script src="https://web3forms.com/client/script.js" async defer></script>
   <script src="../script/contact-form.js"></script>
 </body>
 </html>

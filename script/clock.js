@@ -2,11 +2,12 @@ document.addEventListener("DOMContentLoaded", function () {
   const clock = document.getElementById("local-clock");
   if (!clock) return;
 
-  const formatter = new Intl.DateTimeFormat(undefined, {
+  const formatter = new Intl.DateTimeFormat("en-GB", {
+    timeZone: "Asia/Manila",
     hour: "2-digit",
     minute: "2-digit",
     second: "2-digit",
-    hour12: false
+    hourCycle: "h23"
   });
 
   function updateClock() {

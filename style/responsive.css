@@ -884,6 +884,14 @@
     padding-left: 10px;
   }
 
+  .navbar__clock-label-full {
+    display: none;
+  }
+
+  .navbar__clock-label-compact {
+    display: inline;
+  }
+
   .navbar__clock {
     gap: 4px;
     font-size: 0.68rem;
@@ -1100,6 +1108,10 @@
   .navbar {
     padding-right: 9px;
     padding-left: 9px;
+  }
+
+  .navbar__clock > svg {
+    display: none;
   }
 
   .navbar__controls {

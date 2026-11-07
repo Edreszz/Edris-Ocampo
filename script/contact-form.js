@@ -6,6 +6,8 @@ document.addEventListener("DOMContentLoaded", function () {
 
   if (!form || !status || !submitButton || !submitLabel) return;
 
+  const captchaContainer = form.querySelector(".h-captcha");
+
   function showStatus(message, type) {
     status.textContent = message;
     status.className = `contact-form__status is-visible is-${type}`;
@@ -14,6 +16,17 @@ document.addEventListener("DOMContentLoaded", function () {
   form.addEventListener("submit", async function (event) {
     event.preventDefault();
     if (!form.reportValidity()) return;
+
+    const captchaResponse = form.querySelector(
+      'textarea[name="h-captcha-response"]'
+    );
+    if (captchaContainer && (!captchaResponse || !captchaResponse.value.trim())) {
+      showStatus(
+        "Please complete the hCaptcha check before sending your inquiry.",
+        "error"
+      );
+      return;
+    }
 
     const originalLabel = submitLabel.textContent;
     submitButton.disabled = true;
@@ -39,7 +52,7 @@ document.addEventListener("DOMContentLoaded", function () {
       const senderName = form.elements.namedItem("name").value.trim();
       form.reset();
       showStatus(
-        `Thank you${senderName ? `, ${senderName}` : ""}, for contacting me. I really appreciate it. Your message has been sent; please allow me some time to review it, and I’ll get back to you as soon as I can.`,
+        `Thank you${senderName ? `, ${senderName}` : ""}. Your message has been sent successfully. I aim to reply within 2 business days.`,
         "success"
       );
     } catch (error) {
