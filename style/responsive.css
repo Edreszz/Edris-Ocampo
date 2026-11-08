@@ -923,6 +923,16 @@
     font-size: clamp(2.2rem, 10vw, 3rem);
   }
 
+  .technologies__grid {
+    display: grid;
+    width: min(100%, 300px);
+    grid-template-columns: repeat(3, 64px);
+    justify-content: center;
+    gap: 18px 14px;
+    padding-right: 0;
+    padding-left: 0;
+  }
+
   .projects__grid {
     grid-template-columns: minmax(0, 1fr);
   }
