@@ -1028,6 +1028,7 @@ body.has-scroll-reveal .scroll-reveal.is-scroll-visible {
   overflow: hidden;
   padding: 0;
   color: var(--text-primary);
+  text-decoration: none;
   text-align: left;
   background: color-mix(in srgb, var(--surface-elevated) 86%, transparent);
   border: 1px solid color-mix(in srgb, var(--border-color) 92%, transparent);
@@ -1046,6 +1047,10 @@ body.has-scroll-reveal .scroll-reveal.is-scroll-visible {
   border-color: color-mix(in srgb, var(--accent-primary) 74%, var(--border-color));
   box-shadow: 0 17px 36px color-mix(in srgb, var(--shadow-color) 26%, transparent);
   transform: translateY(-5px) scale(1.025);
+}
+
+.mini-projects__card:active {
+  transform: translateY(-2px) scale(0.99);
 }
 
 .mini-projects__image {
@@ -2835,21 +2840,18 @@ body.has-scroll-reveal .scroll-reveal.is-scroll-visible {
   text-decoration: none;
 }
 
-.home-footer__brand-mark {
-  display: grid;
+.home-footer__brand-image {
+  display: block;
   width: 42px;
   height: 42px;
-  place-items: center;
-  color: #171923;
-  background: linear-gradient(140deg, var(--highlight), var(--accent-primary));
+  flex: 0 0 auto;
+  object-fit: cover;
   border-radius: 14px;
   box-shadow: 0 8px 24px color-mix(in srgb, var(--accent-primary) 22%, transparent);
-  font-size: 0.78rem;
-  letter-spacing: -0.06em;
   transition: transform 200ms ease, box-shadow 200ms ease;
 }
 
-.home-footer__brand:hover .home-footer__brand-mark {
+.home-footer__brand:hover .home-footer__brand-image {
   box-shadow: 0 10px 28px color-mix(in srgb, var(--accent-primary) 34%, transparent);
   transform: rotate(-6deg) translateY(-2px);
 }
@@ -3720,7 +3722,7 @@ body.has-scroll-reveal .scroll-reveal.is-scroll-visible {
   position: absolute;
   height: auto;
   opacity: 0;
-  filter: drop-shadow(0 6px 9px color-mix(in srgb, var(--shadow-color) 28%, transparent));
+  filter: drop-shadow(0 4px 6px color-mix(in srgb, var(--shadow-color) 28%, transparent));
   transition: opacity 320ms ease-in-out;
   will-change: transform;
 }
@@ -3731,10 +3733,10 @@ body.has-scroll-reveal .scroll-reveal.is-scroll-visible {
 
 .spider-family__spider::after {
   position: absolute;
-  top: 9px;
-  right: 2px;
-  width: 7px;
-  height: 7px;
+  top: 5px;
+  right: 1px;
+  width: 4px;
+  height: 4px;
   content: "";
   background: #e6dcff;
   clip-path: polygon(50% 0, 62% 38%, 100% 50%, 62% 62%, 50% 100%, 38% 62%, 0 50%, 38% 38%);
@@ -3875,8 +3877,8 @@ body.has-scroll-reveal .scroll-reveal.is-scroll-visible {
 
 .spider-family__spider.is-annoyed {
   filter:
-    drop-shadow(0 6px 9px color-mix(in srgb, var(--shadow-color) 28%, transparent))
-    drop-shadow(0 0 8px color-mix(in srgb, var(--accent-primary) 45%, transparent));
+    drop-shadow(0 4px 6px color-mix(in srgb, var(--shadow-color) 28%, transparent))
+    drop-shadow(0 0 6px color-mix(in srgb, var(--accent-primary) 45%, transparent));
 }
 
 .spider-family__web {

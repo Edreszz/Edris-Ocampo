@@ -116,8 +116,8 @@ document.addEventListener("DOMContentLoaded", function () {
     });
 
     return jittered.map(([x, y]) => ({
-      x: clamp(width * x, 10, width - 70),
-      y: clamp(safeTop + usableHeight * y, safeTop, height - safeBottom - 78)
+      x: clamp(width * x, 10, width - 46),
+      y: clamp(safeTop + usableHeight * y, safeTop, height - safeBottom - 52)
     }));
   };
 
@@ -130,7 +130,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
   const startRoam = (cycleElapsed) => {
     route = getRoute();
-    spider.style.width = "60px";
+    spider.style.width = "36px";
     spider.style.left = `${route[0].x}px`;
     spider.style.top = `${route[0].y}px`;
     if (reducedMotion) {
